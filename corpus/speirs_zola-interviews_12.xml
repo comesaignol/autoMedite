@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../ressource/zola-interviews.rng"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title/>
+			</titleStmt>
+			<publicationStmt>
+				<p><idno type="FRANTEXT">E323_12</idno></p>
+			</publicationStmt>
+			<sourceDesc>
+				<p/>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div xml:id="div12">
+				<pb n="38" xml:id="p38"/>
+				<head><hi rend="bold">12 Chez Émile Zola</hi></head>
+				<p rend="uppercase">Eugène Clisson</p>
+				<lb/>
+				<div>
+					<dateline><hi rend="it">L’Événement, 20 février 1889</hi></dateline>
+					<lb/>
+					<p>Cédant aux sollicitations de M. Antoine, qui me demandait<lb/> si je n’avais pas dans mes cartons une pièce qui pût être<lb/> représentée sur son théâtre, j’ai consenti à lui donner <hi rend="it">Madeleine</hi>, en<lb/> témoignage de l’intérêt que je porte à l’œuvre qu’il a entreprise.<lb/> Qu’est-ce que <hi rend="it">Madeleine</hi> ? C’est un ouvrage que j’ai écrit il y a vingt<lb/> ans, à l’époque de <hi rend="it">Thérèse Raquin</hi>, qui n’a jamais été représenté jusqu’ici,<lb/> et qui ne l’aurait jamais été sans doute si cette occasion fortuite<lb/> ne l’avait fait sortir de mes archives.</p>
+					<p>Mais souffrez que je ne vous parle pas de ma pièce, en ce moment.<lb/> Le Théâtre Libre s’occupe à l’heure actuelle des répétitions de l’œuvre<lb/> de Goncourt, <hi rend="it">La Patrie en danger</hi>, qui ont commencé aujourd’hui<lb/> même. Directeur et acteurs rivalisent d’efforts pour monter en trois<lb/> semaines cette pièce en cinq actes, qui nécessite une grande mise en<lb/> scène, et qui a été successivement refusée par la Comédie Française<lb/> et plusieurs autres théâtres. C’est vous dire que <hi rend="it">Madeleine</hi> n’est pas<lb/> encore à la veille d’être représentée. J’ignore quels artistes l’interpréteront,<lb/> en un mot si la pièce est faite depuis longtemps, le reste -<lb/> et en matière de théâtre le « reste » est presque tout - est encore à<lb/> l’état embryonnaire. Quant au sujet de <hi rend="it">Madeleine</hi>, je crois qu’il n’est<lb/> pas temps encore d’en dévoiler l’intrigue au public.</p>
+					<p>Laissons donc ma pièce de côté ; mais puisque vous m’en fournissez<lb/> l’occasion, laissez-moi vous dire en toute sincérité ce que je pense du<lb/> Théâtre Libre. Je me rappelle les commencements de cette tentative<lb/> à laquelle j’ai indirectement collaboré. C’était, il y a deux ans, dans<lb/> le « grenier » de Goncourt, un dimanche. Hennique avait tiré une<lb/> pièce d’une de mes nouvelles, « Jacques Damour ». Portée à l’Odéon<lb/> et au Vaudeville, elle avait été impitoyablement refusée. Ce jour-là,<lb/> il s’approcha de moi, m’apprit que quelques jeunes gens avaient formé<lb/> le projet de donner plusieurs représentations dramatiques dans la salle</p>
+					<pb n="39" xml:id="p39"/>
+					<p>de l’Elysée des Beaux Arts, et me demanda si je voulais l’autoriser à<lb/> leur donner <hi rend="it">Jacques Damour</hi>. Si j’étais tout dans ce roman, je n’étais<lb/> pour rien dans la pièce. Telle fut la réponse que je fis à Hennique.<lb/>
+						<hi rend="it">Jacques Damour</hi> fut représenté, vous savez avec quel succès. Le Théâtre<lb/> Libre était créé.</p>
+					<p>C’est là, à coup sûr, une tentative intéressante, qui a eu et qui aura<lb/> encore davantage, par la suite, une influence considérable sur l’art<lb/> dramatique de notre époque. Cette influence ne sera pas immédiate,<lb/> elle se produira lentement, mais sûrement ; aujourd’hui, après deux<lb/> ans écoulés, la floraison commence déjà.</p>
+					<p>Je sais bien qu’on dira, et qu’on a dit que les pièces représentées<lb/> au Théâtre Libre l’étaient dans des conditions trop favorables ; qu’elles<lb/> n’étaient pas jugées par le vrai public, dont le verdict est souvent bien<lb/> différent de celui de la critique. Il n’en est pas moins indéniable que<lb/> le Théâtre Libre a commencé l’éducation du public des premières. Il<lb/> a habitué ce public spécial, composé de tout ce que Paris compte<lb/> d’intelligents et de lettrés, à entendre les hardiesses de la nouvelle<lb/> école dramatique.</p>
+					<p>Vous rappelez-vous les accès de pudibonderie fausse ou réelle qui<lb/> accueillirent jadis <hi rend="it">Monsieur Alphonse</hi> et <hi rend="it">Fanny Lear</hi> ? Aujourd’hui, ces<lb/> pièces passent sans qu’on s’en offusque. C’est au Théâtre Libre qu’on<lb/> peut attribuer en partie ce résultat.</p>
+					<p>Si le public prend du goût pour ce genre de théâtre, les auteurs<lb/> dramatiques sont à leur tour forcés de suivre le mouvement. L’un<lb/> d’eux, et non des moindres, a déjà commencé. Qu’est-ce en effet que<lb/>
+						<hi rend="it">Marquise !</hi> de M. Sardou ? Tout simplement un acheminement vers<lb/> l’école naturaliste. M. Sardou a voulu montrer que, lui aussi, était<lb/> capable de mettre à la scène des situations… risquées. Il l’a fait<lb/> peut-être sans conviction, en homme du métier plutôt qu’en artiste.<lb/> Mais enfin le branle est donné, on suivra.</p>
+					<p>En somme, s’il n’a pas cette valeur définitive qui ne peut être reconnue<lb/> réelle que lorsqu’elle est sanctionnée par un succès répété venant<lb/> du public, le Théâtre Libre, par une accoutumance continuelle<lb/> des choses de la vie, a rendu et rendra encore de très grands services<lb/> à l’art dramatique. C’est là, pour la première fois, qu’on osa porter<lb/> sur la scène l’analyse psychologique. Voyez les pièces d’Hennique,<lb/> voyez le <hi rend="it">Duc d’Enghien</hi>, voyez <hi rend="it">Les Résignés</hi>, de Céard, c’est là de l’analyse<lb/> psychologique, et de la meilleure.</p>
+					<p>Aujourd’hui, on manque d’auteurs dramatiques. De là les reprises<lb/> d’anciennes pièces qui encombrent depuis longtemps les affiches de<lb/> divers théâtres. Après Feuillet, Dumas, Augier, Sardou et quelques<lb/> autres, on rejoue les pièces de Sardou, Augier, Dumas et Feuillet, et<lb/> toujours…</p>
+					<pb n="40" xml:id="p40"/>
+					<p>Il faut que cette situation prenne fin, et que la jeune génération,<lb/> celle de demain, entre en scène. À ce point de vue, le travail du<lb/> Théâtre Libre n’aura pas été inutile.</p>
+					<p>Cette année, il aura eu le privilège de produire devant le public<lb/> des œuvres de Goncourt, de Renan - <hi rend="it">L’Abbesse de Jouarre</hi> - de Catulle<lb/> Mendès, de Gramont, de Céard, d’Hennique, de Villiers de<lb/> l’Isle-Adam, de Porto-Riche, de moi, d’autres encore.</p>
+					<p>Il a d’ailleurs l’avantage d’avoir comme directeur un artiste de talent,<lb/> convaincu, intelligent, M. Antoine. Il convient cependant de<lb/> ne pas lui attribuer à lui seul le succès de cette tentative. Le vrai, c’est<lb/> qu’il est venu à l’heure propice. Hier il aurait peut-être succombé, il<lb/> est permis de croire que demain il n’aurait pas réussi. Il est venu<lb/> aujourd’hui. Il est porteur d’une idée et de même que tout réussit au<lb/> général Boulanger, même les fautes qu’il peut commettre, de même<lb/> l’étoile de M. Antoine le protège.</p>
+					<p>En ce moment, au lendemain de <hi rend="it">Germinie Lacerteux</hi>, il donne une<lb/> preuve de science théâtrale et de courage en montant <hi rend="it">La Patrie en<lb/> danger</hi>, ce drame qui, écrit en 1866, n’a pas encore vu le jour…</p>
+					<p>En résumé, ce que je considère comme certain, c’est que, grâce au<lb/> Théâtre Libre, une évolution tend à se produire en faveur de notre<lb/> nouvelle école dramatique, que l’influence de cette école se fait sentir<lb/> de plus en plus dans le public, et que le temps n’est pas loin où une<lb/> légion de jeunes auteurs la vulgariseront sur les autres scènes parisiennes.</p>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>
