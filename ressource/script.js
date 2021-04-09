@@ -1,17 +1,15 @@
-function createDatavizCar() {
-  var currentURL = window.location.href; // URL courante
-  var requestURL = currentURL.replace("/output/", "/ressource/json/");
-  var request = requestURL.replace(".html", "/datavizCar.json");
-  $.getJSON(request, function(result) {
+function createDatavizCar(id) {
+  var requestURL = "http:localhost/autoMedite/interface/" + id + "/data/datavizCar.json"
+  $.getJSON(requestURL, function(result) {
     // Récupération des données JSON
     var myKeys = [];
     var myValues = [];
     $.each(result, function(key, value){
       myKeys.push(key)
       myValues.push(value)
-    console.log(myValues)
     });
     
+    console.log(myKeys)
     // Création du Graph
     var dataGraph = {
       type: "bar",
@@ -74,8 +72,6 @@ function createDatavizCar() {
     dataGraph.data.labels = myKeys;
     dataGraph.data.datasets["0"].data = myValues;
     // Création du diagramme
-    var myBarChart = new Chart($("#chartDatavizType"), dataGraph);
+    var myBarChart = new Chart($("#dataVizCar"), dataGraph);
   });
 }
-                
-createDatavizCar()

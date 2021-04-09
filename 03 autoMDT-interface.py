@@ -6,17 +6,8 @@
 
 import config
 
-
-# Librairie scrapping
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
 # Librairie gestion de fichier
 import os
-import codecs
-import glob
 import shutil
 
 # Librairie Data Science
@@ -26,37 +17,59 @@ import pandas as pd
 ############
 ### MAIN ###
 ############  
-
-def createDirJson():
-  path = os.path.join(config.dirCurrent,"ressource/json")
-  if os.path.exists(path):
-  	shutil.rmtree(path)
-  os.mkdir(path)
   
-def createDirFile(name):
-  path = os.path.join(config.dirCurrent,"ressource/json", name)
+def createDir(path):
   if os.path.exists(path):
   	shutil.rmtree(path)
   os.mkdir(path)
+  print("Done", "Création du dossier", path)
+
+
+"""
+Création de l'interface pour consulter les résultats de l'interface
+"""
 
 def main():
   
-  # Création du dossier ressource
-  createDirJson()
+  # Lecture du fichier alignement
+  df = pd.read_csv("relation.tsv", sep='\t', header=0)
   
-  # Traitement de chaque fichier
-  pathList = os.path.join(config.dirOutput,"*.html")
-  fileList = glob.glob(pathList)
-  for file in fileList:
+  # Lancement du programme pour chaque alignement
+  for i in range(len(df)):
     
-    # Modification du HTML
-    with open(file, "r", encoding="utf-8") as fichier:
-      # Parser le document
-      soup = BeautifulSoup(fichier, features="lxml")
+    print("<><><><><><><><><>")
+    print("<> ALIGNMENT " + str(i+1) + " <>")
+    print("<><><><><><><><><>")
+    
+    # Création du nom de fichier
+    alignmentName = df.loc[i, "Alignement"]
+   
+    # Création du dossier de sortie
+    alignmentDir = os.path.join(config.dirOutputInterface, alignmentName)
+    createDir(alignmentDir)
+    
+    # Création du dossier data
+    dirData = os.path.join(alignmentDir, "data")
+    createDir(dirData)
+    
+    # Création du dossier ressource
+    dirRessource = os.path.join(alignmentDir, "ressource")
+    createDir(dirRessource)
+    
+    # Déplace les fichiers ressources
+    shutil.copy(config.dirSourceCSS, dirRessource)
+    shutil.copy(config.dirSourceJS, dirRessource)
       
-      ############################
-      ### AJOUT DES LIBRAIRIES ###
-      ############################
+    # Modification du HTML
+    path = os.path.join(config.dirOutputAlignment, alignmentName, alignmentName + ".html")
+    with open(path, "r", encoding="utf-8") as file:
+      
+      # Parser le document
+      soup = BeautifulSoup(file, features="lxml")
+      
+      ##############################
+      ### GESTION DU HEADER HTML ###
+      ##############################
       
       # Suppression des vieilles librairies
       for elt in soup.find_all("script"):
@@ -70,7 +83,7 @@ def main():
       # Style CSS
       css = soup.new_tag("link")
       css["rel"] = "stylesheet"
-      css["href"] = "../ressource/css/style.css"
+      css["href"] = "ressource/style.css"
       title.insert_after(css)
       
       # Librairie Bootstrap
@@ -96,12 +109,18 @@ def main():
       # Script JS
       js = soup.new_tag("script")
       js["type"] = "text/javascript"
-      js["src"] = "../ressource/js/script.js"
+      js["src"] = "ressource/script.js"
       chart.insert_after(js)
       
-      ####################################
-      ### Ajouter colonne de bootstrap ###
-      ####################################
+      # Déclencher script
+      script = soup.new_tag("script")
+      script.append("createDatavizCar('" + alignmentName + "');")
+      body = soup.find("body")
+      body.insert_after(script)
+      
+      ############################
+      ### GESTION DU MAIN HTML ###
+      ############################
       
       # Suppression des informations complémentaires (modal)
       soup.find("div", id="modal-content").decompose()
@@ -127,53 +146,51 @@ def main():
       eltColCenter["class"] = "col-4 border mh-100 order-2"
       
       # Colonne de droite
-      eltColRight = soup.new_tag("div")
+      eltColRight = soup.new_tag("div", attrs = {"id" : "test"})
       eltColRight["class"] = "col-4 border mh-100 order-3"
-      eltColRight["id"] = "test"
       
       canvas = soup.new_tag("canvas")
       canvas["id"] = "dataVizCar"
+      canvas["height"] = "50px"
+      canvas["width"] = "50px"
       
       eltColRight.append(canvas)
       
       eltColCenter.insert_after(eltColRight)
       
-      ####################################
+      #########################
       ### GESTION DES DATAS ###
-      ####################################
+      #########################
       
-      
-      # Création du dossier json correspondant au nom du fichier
-      fileName = os.path.splitext(os.path.basename(file))[0]
-      createDirFile(fileName)
-      
-      def makeDataCar(name):
-        i = 0
+      def makeDataAbsolute(name):
+        j = 0
         eltList = soup.find_all("span", attrs = {"class" : name})
         for elt in eltList:
-          i = i + len(elt)
-        return i
+          j = j + len(elt.string)
+        return str(j)
       
       # Création des datas
-      balise = ["span_c", "span_i", "span_s", "span_r", "span_d"]
       data = []
+      balise = ["span_c", "span_i", "span_s", "span_r", "span_d"]
       for elt in balise:
-        data.append(makeDataCar(elt))
+        data.append(makeDataAbsolute(elt))
       data = [data]
       
       # Création des labels
       label = ["Communs", "Insertion", "Suppression", "Remplacement", "Déplacement"]
       
       # Création du Dataframe
-      df = pd.DataFrame(data, columns=label)
+      df2 = pd.DataFrame(data, columns=label)
       
-      # Export Json
-      pathJson = os.path.join(config.dirCurrent,"ressource/json", fileName, "datavizCar.json")
-      df.to_json(pathJson, orient="records", force_ascii=False)
+      # Export Data Json
+      path = os.path.join(dirData, "datavizCar.json")
+      df2.to_json(path, orient="records", force_ascii=False, lines=True)
     
     # Sauvegarde du HTML
-    with open(file, "wb") as fichier:
+    path = os.path.join(alignmentDir, alignmentName + ".html")
+    with open(path, "wb") as fichier:
       fichier.write(soup.prettify("utf-8"))
-      print("done")
-      
+      print("Done", "Création de l'interface", path)
+    soup = ""
+    
 main()
