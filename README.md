@@ -1,20 +1,29 @@
 # autoMedite
 
-## Présentation générale
+## Introduction
 
-AutoMedite est un ensemble de modules développé en Python 3 permettant le téléchargement et l’alignement automatique de deux versions d’une même œuvre à partir du logiciel MEDITE utilisable à cette adresse : http://obvil.lip6.fr/medite/ Si la version en ligne propose déjà la comparaison des variantes, AutoMedite approfondie ses fonctionnalités en offrant la possibilité de lister toutes les comparaisons souhaitées et de procéder aux alignements par lots. Pour le dire autrement : là où Médite propose l’alignement de deux versions d’une même œuvre, AutoMedite réalise successivement plusieurs alignement à partir d’une liste établie en amont. AutoMedite génère enfin une interface de lecture des alignement en local permettant l’étude des textes au cours de sessions de travail.
+AutoMedite est un ensemble de modules développés en Python 3 permettant le téléchargement et l’alignement automatique de deux versions d’une même œuvre à partir du logiciel MEDITE utilisable à cette adresse : http://obvil.lip6.fr/medite/.
+
+Si la version en ligne propose déjà la comparaison des variantes, AutoMedite approfondie ces fonctionnalités de plusieurs manières :
+
+*  **Gestion des fichiers par lots**. Là où Médite propose l’alignement de deux versions d’une même œuvre, AutoMedite réalise successivement plusieurs alignement à partir d’une liste établie en amont.
+*  **Gestion des XML**. Alors que Médite propose uniquement le traitement de fichiers TXT en amont, AutoMedite reporte les annotations TXT dans le fichier XML de départ.
+*  **Interface de lecture**. AutoMedite propose enfin une interface de lecture des alignement en local permettant l’étude des textes au cours de sessions de travail.
+
+## Structure du dossier
 
 Ce répertoire comporte plusieurs modules à utiliser successivement ou de manière indépendante :
 
 1. **autoMDT-xml2txt.py**. Module convertissant un fichier XML en TXT, utile si les documents du corpus sont au format XML-TEI par exemple.
-2. **autoMDT-alignment.py**. Module réalisant automatiquement les alignements à partir d’un fichier CSV.
-3. **autoMDT-interface.py**. Module générant pour chaque alignement une interface web locale.
+2. **autoMDT-alignment-raw.py**. Module réalisant automatiquement les alignements listés dans un fichier CSV.
+3. **autoMDT-alignment-tei.py**. Module réalisant automatiquement les alignements listés dans un fichier CSV.
+4. **autoMDT-interface.py**. Module générant pour chaque alignement une interface web locale.
 
-Le répertoire comporte aussi plusieurs fichiers utiles pour l’installation et la configuration des modules :
+Le répertoire comporte aussi plusieurs fichiers nécessaires à  l’installation et la configuration des modules :
 * **config.py**. Fichier de configuration comportant la liste de paramètres utilisés par chaque module.
-* **relation.csv**. Fichier listant les paires d’alignements qu’AutoMedite réalise
+* **relation.csv**. Fichier listant les paires d’alignements qu’AutoMedite réalise.
 * **requiremnts.txt**. Fichier listant la liste des packages utilisés.
-* **ressource**. Dossier comportant les fichiers 
+* **ressource**. Dossier comportant les fichiers CSS et JS pour l’interface locale.
 
 ## Installation des librairies
 
@@ -28,7 +37,7 @@ Pour installer les packages manquants :
 
     pip install -r path\to\requirements.txt
     
-avec le chemin absolu correspondant au fichier requirements.txt présent dans cet outil.
+avec le chemin absolu correspondant au fichier **requirements.txt** présent dans cet outil.
 
 ## autoMDT-xml2txt.py
 
@@ -46,7 +55,7 @@ L’exécution du module entraîne la conversion des fichier XML en TXT dans le 
 
 ### Pré-requis
 
-**autoMDT-alignment.py** nécessite l’installation du driver Mozilla Firefox pour fonctionner correctement. Ce fichier permet en effet d’activer à distance le navigateur Mozilla Firefox qui sera utilisé pour aligner successivement les versions listées dans le fichier « relation.csv ».
+**autoMDT-alignment.py** nécessite l’installation du driver Mozilla Firefox pour fonctionner correctement. Ce fichier permet en effet d’activer à distance le navigateur qui sera utilisé pour aligner successivement les versions listées dans le fichier « relation.csv ».
 
 * Télécharger geckodriver en fonction de votre version de Mozilla : https://github.com/mozilla/geckodriver/releases
 * Copier-coller geckodriver dans le répertoire d’installation d’Anaconda C:\\ProgramData\\Anaconda3
@@ -86,4 +95,4 @@ Pour Windows, on utilisera de préférence un serveur Wamp64.
 
 **autoMDT-interface.py** ne nécessite pas de configuration particulière.
 
-L’exécution du module entraîne la création d’une interface disponible dans le répertoire « interface ». Pour la consulter, ouvrez le fichier HTML correspondant dans le navigateur  de votre choix. Un bug, en cours de résolution, empêche la consultation du graphique : les données brutes sont toutefois présentes dans le répertoire « data ».
+L’exécution du module entraîne la création d’une interface disponible dans le répertoire « interface ». Pour la consulter, ouvrez le fichier HTML correspondant dans le navigateur de votre choix. Un bug, en cours de résolution, empêche la consultation du graphique : les données brutes sont toutefois présentes dans le répertoire « data ».

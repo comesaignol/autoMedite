@@ -1,3 +1,36 @@
+
+// 
+$(document).ready(function(){
+  $("span").on("click", function() {
+    var id = "#" + $(this).attr('id');
+    $("div.order-1").animate({
+      scrollTop: $(id).offset().top
+    }, 200);
+  });
+});
+
+// Waypoint FONCTIONNEL
+//var waypoint = new Waypoint({
+//  element: document.getElementById("c_00002"),
+//  handler: function(direction) {
+//    console.log('Scrolled to waypoint!')
+//  },
+//  context: document.getElementById('version1')
+//})
+
+// Waypoint
+var continuousElements = document.getElementsByClassName('span_s')
+for (var i = 0; i < continuousElements.length; i++) {
+    new Waypoint({
+        element: continuousElements[i],
+        handler: function() {
+            // Log de l'élément
+            console.log(this.element.id + " hit !");
+        },
+        context: document.getElementById('version1'),
+    })
+}
+
 function createDatavizCar(id) {
   var requestURL = "http:localhost/autoMedite/interface/" + id + "/data/datavizCar.json"
   $.getJSON(requestURL, function(result) {
@@ -17,10 +50,16 @@ function createDatavizCar(id) {
         labels: [], // Données Json à importer ici
         datasets: [
           {
-            label: "Nombre d'occurences ",
+            label: "Nombre de caractères ",
             data: [], // Données Json à importer ici
-            backgroundColor: "rgba(0, 153, 59, 0.60)",
-            borderColor: "rgba(0, 153, 59, 1)",
+            backgroundColor: ["rgba(0, 180, 120, 0.2)",
+            									"rgba(255, 99, 132, 0.2)",
+            									"rgba(54, 162, 235, 0.2)",
+            									"rgba(255, 159, 64, 0.2)"],
+            borderColor: ["rgb(0, 180, 120)",
+            							"rgb(255, 99, 132)",
+            							"rgb(54, 162, 235)",
+            							"rgb(255, 159, 64)"],
             borderWidth: 1,
           }
         ]

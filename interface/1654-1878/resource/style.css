@@ -1,0 +1,55 @@
+.speaker {
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+div {
+	text-align: justify;
+}
+
+#one ~ p:not(#two)
+
+
+.span_c:hover, .insertion:hover, .suppression:hover, .remplacement:hover, .deplacement:hover {
+	border-bottom: 1px dotted #c1cbe6;
+	cursor:pointer;
+}
+
+/*Insertion*/
+.insertion {
+	background-color: rgba(0, 180, 120, 0.5);
+}
+
+/*Suppresion*/
+.suppression {
+	background-color: rgba(255, 99, 132, 0.5);
+}
+
+/*Remplacement*/
+.remplacement {
+	background-color: rgba(54, 162, 235, 0.5);
+}
+
+/*Déplacement*/
+.deplacement {
+	background-color: rgba(255, 159, 64, 0.5);
+}
+
+html, body {
+	height: 100%;
+}
+
+* {
+	color: #c1cbe6;
+	background-color: #243040;
+}
+
+span {
+	/*display: inline;*/
+	/*white-space-collapsing:discard;*/
+}
+
+.col-4 {
+	overflow-y: scroll;
+}

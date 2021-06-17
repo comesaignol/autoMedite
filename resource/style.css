@@ -1,0 +1,134 @@
+:root {
+	--header-bg: #152e4d;
+	--main-color: #a5adc6;/*Avant : #c1cbe6    Après:  #a5adc6*/
+	--main-bg: #12263f;
+	--hr-bg: #6d7d90;
+}
+
+
+.speaker {
+	text-transform: uppercase;
+	text-align: center;
+	width: 100%;
+}
+
+
+/************/
+/*** MAIN ***/
+/************/
+
+html, body {
+	height: 100%;
+}
+
+* {
+	color: var(--main-color);
+	background-color: var(--main-bg);
+}
+
+#container {
+	background-color: var(--header-bg);
+}
+
+#header, #header * {
+	background-color: var(--header-bg);
+}
+
+div {
+	text-align: justify;
+}
+
+.col-5, .col-2 {
+	overflow-y: auto;
+}
+
+#information {
+	background-color: var(--header-bg);
+	border-top: 1px solid var(--main-bg); 
+}
+
+#information * {
+	background-color: var(--header-bg);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	
+}
+
+h1 {
+	font-weight: bold !important;
+}
+
+
+hr {
+	border-top: 1px solid var(--hr-bg) !important;
+}
+
+#information i {
+	color: white;
+}
+
+/************/
+/*** SPAN ***/
+/************/
+
+.span_c:hover, .insertion:hover, .suppression:hover, .remplacement:hover, .deplacement:hover {
+	border-bottom: 1px dotted #c1cbe6;
+	cursor:pointer;
+}
+
+/*Insertion*/
+.insertion {
+	background-color: rgba(0, 180, 120, 0.5);
+}
+
+/*Suppresion*/
+.suppression {
+	background-color: rgba(255, 99, 132, 0.5);
+}
+
+/*Remplacement*/
+.remplacement {
+	background-color: rgba(54, 162, 235, 0.5);
+}
+
+/*Déplacement*/
+.deplacement {
+	background-color: rgba(255, 159, 64, 0.5);
+}
+
+/***************/
+/*** LEGENDE ***/
+/***************/
+
+
+.circle {
+	width: 18px;
+  height: 18px;
+  border-radius: 20px;
+}
+
+#circle-insertion {
+  background: rgba(0, 180, 120, 0.5);
+}
+
+#circle-suppression {
+  background: rgba(255, 99, 132, 0.5);
+}
+
+#circle-remplacement {
+  background: rgba(54, 162, 235, 0.5);
+}
+
+#circle-deplacement {
+  background: rgba(255, 159, 64, 0.5);
+}
+
+/*************/
+/*** CHART ***/
+/*************/
+
+#dataAbsolute {
+}

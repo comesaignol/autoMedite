@@ -15,47 +15,57 @@ import pandas as pd
 import re
 
 """
+saveTXT : extracting text from XML-TEI file with REGEX
 """
 
 def saveTXT(path):
   
   with open(path, "r", encoding="utf-8") as fichier:
     
-    # Création du string
+    # Create strings
     soup = BeautifulSoup(fichier, features="lxml")
     soup = soup.find("text").get_text()
     
-    # Correction regex
+    # Correction REGEX
     soup = re.sub("'", "’", soup)
     soup = re.sub("(\n){1,}"," ", soup)
     soup = re.sub("( ){2,}", " ", soup)
     
-    # Enregistrement du TXT
+    # Save TXT
     name = os.path.splitext(path)[0] + ".txt"
     pathTXT = os.path.join(config.dirCorpus, name)
     with open(pathTXT, "w+", encoding="utf8") as txt:
       txt.write(soup)
-      print("Done", "Création du fichier TXT : " + name)
+      print("Done", "Create TXT file : " + name)
+
 
 """
+Principal function
 """
 
 def main():
   
-  # Lecture du fichier alignement
-  df = pd.read_csv("relation.tsv", sep='\t', header=0)
+  print("")
+  print("<><><><><><><><><><><>")
+  print("<> CREATE TXT FILES <>")
+  print("<><><><><><><><><><><>")
+  print("")
   
-  # Lancement du programme pour chaque alignement
-  for i in range(len(df)):
-    
-    # Récupération des paths des fichier
-    text1Path = os.path.join(config.dirCorpus, str(df.loc[i,"Etat 1"]) + ".xml")
-    text2Path = os.path.join(config.dirCorpus, str(df.loc[i,"Etat 2"]) + ".xml")
-    
-    saveTXT(text1Path)
-    saveTXT(text2Path)
-    
-  print("Done", "autoMDT-xml2txt.py")
+  
+  # Conversion text 1
+  text1Source = config.text1 + ".xml"
+  text1SourcePath = os.path.join(config.dirCorpus, text1Source)
+  saveTXT(text1SourcePath)
+  
+  # Conversion text 2
+  text2Source = config.text2 + ".xml"
+  text2SourcePath = os.path.join(config.dirCorpus, text2Source)
+  saveTXT(text2SourcePath)
+
+
+"""
+Command
+"""
     
 main()
 
