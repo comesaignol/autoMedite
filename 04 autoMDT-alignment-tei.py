@@ -46,8 +46,76 @@ def normalised(tok):
                 list3.append(elt2)
     return list3
 
+
+
 """
-Tokenization du texte aligné : renvoi une liste de token comportant pour chacun l'annotation en TEI correspondante. Les blocs communs ne sont pas encore traités.
+statistiqueAlign : 
+"""
+def statisticAlign(source):
+  # Ouverture du fichier
+  with open(source, "r", encoding="utf-8") as file:
+    
+    # On parse le fichier
+    tree = etree.parse(file)
+    
+    # On parcoure le fichier
+    statisticAlign = []
+    for elt in tree.iter():
+      
+      # Récupération du type d'annotation
+      attribut = str(elt.get("class"))
+      ident = str(elt.get("id"))
+      
+      """
+      Gestion des têtes dans les balises
+      """
+      if elt.text:
+        
+        # Tokenisation
+        tokens = nltk.word_tokenize(elt.text)
+        
+        # Normaliser la tokenization
+        newTokensList = []
+        for tok in tokens:
+          normList = normalised(tok)
+          for norm in normList:
+            newTokensList.append(norm)
+        
+        # Ajouter des balises
+        indexToken = 0
+        for newToken in newTokensList:
+          
+          # Gestion des communs
+          if attribut == "span_c":
+            newToken = "<seg type='start' subtype='commun' ident='" + ident +"'>" + newToken +  "</seg>"
+          
+          # Gestion des insertions
+          if attribut == "span_i":
+            newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'>" + newToken +  "</seg>"
+          
+          # Gestion des suppressions
+          if attribut == "span_s":
+            newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'>" + newToken +  "</seg>"
+          
+          # Gestion des remplacements
+          if attribut == "span_r":
+            newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'>" + newToken +  "</seg>"
+          
+          # Gestion des déplacement
+          if attribut == "span_d":
+            newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'>" + newToken +  "</seg>"
+          
+          # On itère
+          indexToken += 1
+          
+          # Ajout des tokens
+          statisticAlign.append(newToken)
+          
+  return statisticAlign
+
+
+"""
+tokenizeAlign : Tokenization du texte aligné qui renvoi une liste de token comportant pour chacun l'annotation en TEI correspondante. L'annotation est ici notée avec des balises auto-fermantes : elle est valide du point de vue du XML-TEI.
 """
 
 def tokenizeAlign(source):
@@ -82,112 +150,75 @@ def tokenizeAlign(source):
             newTokensList.append(norm)
         
         # Ajouter des balises
+        indexToken = 0
         for newToken in newTokensList:
+          
+          # Gestion des communs
+          if attribut == "span_c":
+            if len(newTokensList) == 1:
+              newToken = "<seg type='start' subtype='commun' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='commun' ident='" + ident +"'/>"
+            else:
+              if indexToken == 0:
+                newToken = "<seg type='start' subtype='commun' ident='" + ident +"'/>" + newToken
+              elif indexToken < len(newTokensList)-1:
+                newToken = newToken
+              else:
+                newToken = newToken + "<seg type='end' subtype='commun' ident='" + ident + "'/>"
           
           # Gestion des insertions
           if attribut == "span_i":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='insertion' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'/>" + newToken
+            if len(newTokensList) == 1:
+              newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='insertion' ident='" + ident +"'/>"
             else:
-              newToken = newToken + "<seg type='end' subtype='insertion' ident='" + ident + "'/>"
+              if indexToken == 0:
+                newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'/>" + newToken
+              elif indexToken < len(newTokensList)-1:
+                newToken = newToken
+              else:
+                newToken = newToken + "<seg type='end' subtype='insertion' ident='" + ident + "'/>"
           
           # Gestion des suppressions
           if attribut == "span_s":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='suppression' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'/>" + newToken
+            if len(newTokensList) == 1:
+              newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='suppression' ident='" + ident +"'/>"
             else:
-              newToken = newToken + "<seg type='end' subtype='suppression' ident='" + ident + "'/>"
+              if indexToken == 0:
+                newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'/>" + newToken
+              elif indexToken < len(newTokensList)-1:
+                newToken = newToken
+              else:
+                newToken = newToken + "<seg type='end' subtype='suppression' ident='" + ident + "'/>"
           
           # Gestion des remplacements
           if attribut == "span_r":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='remplacement' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'/>" + newToken
+            if len(newTokensList) == 1:
+              newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='remplacement' ident='" + ident +"'/>"
             else:
-              newToken = newToken + "<seg type='end' subtype='remplacement' ident='" + ident + "'/>"
+              if indexToken == 0:
+                newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'/>" + newToken
+              elif indexToken < len(newTokensList)-1:
+                newToken = newToken
+              else:
+                newToken = newToken + "<seg type='end' subtype='remplacement' ident='" + ident + "'/>"
           
           # Gestion des déplacement
           if attribut == "span_d":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='deplacement' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'/>" + newToken
+            if len(newTokensList) == 1:
+              newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='deplacement' ident='" + ident +"'/>"
             else:
-              newToken = newToken + "<seg type='end' subtype='deplacement' ident='" + ident + "'/>"
+              if indexToken == 0:
+                newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'/>" + newToken
+              elif indexToken < len(newTokensList)-1:
+                newToken = newToken
+              else:
+                newToken = newToken + "<seg type='end' subtype='deplacement' ident='" + ident + "'/>"
+          
+          # On itère
+          indexToken += 1
           
           # Ajout des tokens
           tokensAlign.append(newToken)
-      
-      """
-      Gestion des queux dans les balises
-      """
-      if elt.tail:
-        
-        # Tokenisation
-        tokens = nltk.word_tokenize(elt.tail)
-        
-        # Normaliser la tokenization
-        newTokensList = []
-        for tok in tokens:
-          normList = normalised(tok)
-          for norm in normList:
-            newTokensList.append(norm)
-        
-        # Ajouter des balises
-        for newToken in newTokensList:
           
-          # Gestion des insertions
-          if attribut == "span_i":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='insertion' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='insertion' ident='" + ident +"'/>" + newToken
-            else:
-              newToken = newToken + "<seg type='end' subtype='insertion' ident='" + ident + "'/>"
-          
-          # Gestion des suppressions
-          if attribut == "span_s":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='suppression' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='suppression' ident='" + ident +"'/>" + newToken
-            else:
-              newToken = newToken + "<seg type='end' subtype='suppression' ident='" + ident + "'/>"
-          
-          # Gestion des remplacements
-          if attribut == "span_r":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='remplacement' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='remplacement' ident='" + ident +"'/>" + newToken
-            else:
-              newToken = newToken + "<seg type='end' subtype='remplacement' ident='" + ident + "'/>"
-          
-          # Gestion des déplacement
-          if attribut == "span_d":
-            if newTokensList.index(newToken) == 0:
-              if len(newTokensList) == 1:
-                newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'/>" + newToken +  "<seg type='end' subtype='deplacement' ident='" + ident +"'/>"
-              else:
-                newToken = "<seg type='start' subtype='deplacement' ident='" + ident +"'/>" + newToken
-            else:
-              newToken = newToken + "<seg type='end' subtype='deplacement' ident='" + ident + "'/>"
-          
-          # Ajout des tokens
-          tokensAlign.append(newToken)
-    
   return tokensAlign
 
 
@@ -281,6 +312,7 @@ def transferToken(source, tokensAlign, target):
     
     # Export du fichier
     with open(target, "ab") as file:
+      # print(etree.tostring(tree, encoding="utf-8"))
       file.write(etree.tostring(tree, encoding="utf-8"))
       print("Done", "Export align TEI", target)
       
@@ -313,55 +345,6 @@ def correction(source):
     for line in linesCorr:
       file.write(line)
     print("Done", "Correction cararacter XML : ", source)
-  
-  
-  '''
-  Suppression des doublons d'annotations dus à la tokenization
-  '''
-  
-  # Lecture du fichier
-  with open(source, "r", encoding="utf-8") as file:
-    
-    # Parser le document
-    soup = BeautifulSoup(file, features="lxml")
-    
-    # Lister identifiants <START>
-    identList = []
-    for elt in soup.find_all("seg", attrs= {"type" : "start"}):
-      identList.append(elt["ident"])
-    identList = list(set(identList))
-    
-    # Supprimer les doublons <START>
-    for ident in identList:
-      doublonList = soup.find_all("seg", attrs = {"type" : "start", "ident": ident})
-      size = len(doublonList)
-      if size > 1:
-        i = 1
-        while i < size:
-          doublonList[i].decompose()
-          i += 1
-      print("Suppression des doublons <START> : ", str(identList.index(ident)) + " / " + str(len(identList)))
-    
-    # Lister identifiants <END>
-    identList = []
-    listSegEnd = soup.find_all("seg", attrs = {"type" : "end"})
-    for elt in listSegEnd:
-      identList.append(elt["ident"])
-    identList = list(set(identList))
-    
-    # Supprimer doublons <END>
-    for ident in identList:
-      doublonList = soup.find_all("seg", attrs = {"type":"end", "ident" : ident})
-      size = len(doublonList)
-      for elt in doublonList:
-        if doublonList.index(elt) != size - 1: # sauf le dernier doublon de la liste
-          elt.decompose()
-      print("Suppression des doublons <END> : ", str(identList.index(ident)) + " / " + str(len(identList)))
-   
-  # Export du résultat
-  with open(source, "w+", encoding="utf-8") as file:
-    file.write(str(soup))
-    print("Done", "Suppression des doublons : ", source)
   
   
   '''
@@ -401,16 +384,19 @@ def fusionTei(text1, text2, target):
   
   # Lecture du text 1
   with open(text1, "r+", encoding="utf-8") as file:
-    soup = BeautifulSoup(file, features="lxml")
+    soup = BeautifulSoup(file, features="lxml-xml")
     align1 = soup.find("text")
+    align1["id"] = "version1"
   
   # Lecture du text 2
   with open(text2, "r+", encoding="utf-8") as file:
-    soup = BeautifulSoup(file, features="lxml")
+    soup = BeautifulSoup(file, features="lxml-xml")
     align2 = soup.find("text")
+    align2["id"] = "version2"
   
   # Fusion des deux fichiers en suivant syntaxe de la TEI
-  with open(target, "w+", encoding="utf-8") as file:
+  # BUG cette procédure supprime les <tei:head>
+  with open(target, "wb") as file:
     
     # Ajout de la balise TEI
     tei = soup.new_tag("TEI")
@@ -425,19 +411,13 @@ def fusionTei(text1, text2, target):
     tei.append(body)
     
     # Ajout du texte 1
-    text1 = soup.new_tag("text")
-    text1["id"] = "version1"
-    text1.append(align1)
-    body.append(text1)
+    body.append(align1)
     
     # Ajout du texte 2
-    text2 = soup.new_tag("text")
-    text2["id"] = "version2"
-    text2.append(align2)
-    body.append(text2)
+    body.append(align2)
     
     # Écriture des modifications
-    file.write(str(tei))
+    file.write(tei.prettify("utf-8"))
     print("Done", "Fusion TEI : ", target)
 
 """
@@ -458,23 +438,36 @@ def main():
   # Création du fichier de sortie
   createDir(config.dirAlignmentTeiName)
   
-  # Alignement tei text 1
+  # Alignement tei version 1
   tokens1Align = tokenizeAlign(config.text1AlignRaw)
   transferToken(config.text1Source, tokens1Align, config.text1AlignTei)
   correction(config.text1AlignTei)
   
-  # Alignement tei text 2
+  # Alignement tei version 2
   tokens2Align = tokenizeAlign(config.text2AlignRaw)
-  tokenSource = transferToken(config.text2Source, tokens2Align, config.text2AlignTei)
+  transferToken(config.text2Source, tokens2Align, config.text2AlignTei)
   correction(config.text2AlignTei)
   
-  # debuggage
-  # df = pd.DataFrame(list(zip(tokenSource, tokens2Align)), columns =["tokensSource", "tokens2Align"])
-  # path = os.path.join(config.dirAlignmentTeiName, "test.csv")
-  # df.to_csv(path, sep="\t")
-  
-  # Fusion des deux textes
+  # Fusion finale des deux version
   fusionTei(config.text1AlignTei, config.text2AlignTei, config.finalTei)
+  
+  # Alignement statistic version 1
+  statistic1ALign = statisticAlign(config.text1AlignRaw)
+  transferToken(config.text1Source, statistic1ALign, config.text1AlignStatisticTei)
+  correction(config.text1AlignStatisticTei)
+  
+  # Alignement statistic version 2
+  statistic2ALign = statisticAlign(config.text2AlignRaw)
+  transferToken(config.text2Source, statistic2ALign, config.text2AlignStatisticTei)
+  correction(config.text2AlignStatisticTei)
+  
+  # Fusion finale des deux versions statistiques
+  fusionTei(config.text1AlignStatisticTei, config.text2AlignStatisticTei, config.finalStatisticTei)
+  
+  # debuggage
+  # df = pd.DataFrame(list(zip(tokens1Align)), columns =["tokens1Align"])
+  # path = os.path.join(config.dirAlignmentTeiName, "debuggage.csv")
+  # df.to_csv(path, sep="\t")
   
   # Calcul de la durée du programme
   endTime = time.time()

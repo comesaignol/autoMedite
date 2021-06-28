@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 import nltk
+import statistics
 
 ############
 ### MAIN ###
@@ -25,6 +26,29 @@ def createDir(path):
   	shutil.rmtree(path)
   os.mkdir(path)
   print("Done", "Make dir : ", path)
+
+
+"""
+moveFiles: 
+"""
+
+def moveFiles():
+  
+  # Move resource files
+  createDir(config.dirInterfaceData)
+  createDir(config.dirInterfaceTei)
+  shutil.copytree(config.dirSourceCSS, config.dirInterfaceCSS)
+  shutil.copytree(config.dirSourceJS, config.dirInterfaceJS)
+  shutil.copytree(config.dirSourceResource, config.dirInterfaceResource)
+  
+  # Move fichier interface
+  shutil.copy(config.dirSourceIndex, config.dirInterfaceName)
+  
+  # Move
+  shutil.copy(config.text1AlignStatisticTei, config.dirInterfaceTei)
+  shutil.copy(config.text2AlignStatisticTei, config.dirInterfaceTei)
+  shutil.copy(config.finalTei, config.dirInterfaceTei)
+  print("Done", "Move dir and files in interface")
 
 
 """
@@ -47,6 +71,36 @@ def makeInterface(source, target):
     version2.name = "div"
     version2.attrs = {}
     
+    # Modification
+    versions = [version1, version2]
+    for version in versions:
+      
+      # Bug ponctuel
+      for elt in version.find_all("text"):
+        elt.name = "div"
+      
+      # Dive type set
+      for elt in version.find_all("div", attrs = {"type" : "set"}):
+        elt.name = "p"
+        elt.attrs = None
+      
+      # Gestion des éléments blocks
+      for elt in config.eltBlock:
+        for element in version.find_all(elt):
+          element.name = "p"
+          element.attrs = None
+      
+      # Gestion des éléments inlines
+      for elt in config.eltInline:
+        for element in version.find_all(elt):
+          element.attrs = None
+      
+      # Annotations
+      for elt in version.find_all("seg", attrs= {"type" : "start"}):
+        elt.name = "start"
+      for elt in version.find_all("seg", attrs= {"type" : "end"}):
+        elt.name = "end"
+    
   
   # Add in interface
   with open(target, "r", encoding="utf-8") as file:
@@ -60,25 +114,9 @@ def makeInterface(source, target):
     div2 = soup.find("div", attrs = {"id" : "version2"})
     div2.append(version2)
     
-    """
-    Premières corrections REGEX
-    """
-    # Gestion des éléments blocks
-    for elt in config.eltBlock:
-      for element in soup.find_all(elt):
-        element.name = "p"
-        element.attrs = None
-    
-    # Gestion des éléments inlines
-    for elt in config.eltInline:
-      for element in soup.find_all(elt):
-        element.attrs = None
-    
-    # Annotations
-    for elt in soup.find_all("seg", attrs= {"type" : "start"}):
-      elt.name = "start"
-    for elt in soup.find_all("seg", attrs= {"type" : "end"}):
-      elt.name = "end"
+    # Ajout lien téléchargement
+    downloadTEI = soup.find("a", attrs = {"id" : "downloadTEI"})
+    downloadTEI["href"] = "xml-tei/" + config.alignmentName + "_align-tei.xml"
       
   # Sauvegarde du HTML
   with open(target, "wb") as fichier:
@@ -93,6 +131,9 @@ def correctionInterface(source):
   
   with open(source, "r", encoding="utf-8") as file:
     
+    # text = file.read()
+    # text = re.sub('<start ident="(.*?)" subtype="(.*?)" type="start">', r"<span class='\2' id='\1'>", text)
+    # print(text)
     # Application des regex
     linesRaw = file.readlines()
     linesCorr = []
@@ -101,8 +142,6 @@ def correctionInterface(source):
       # Gestion des éléments structurants
       line = re.sub("<p>", "", line)
       line = re.sub("</p>", "<br>", line)
-      line = re.sub("<l>", "", line)
-      line = re.sub("</l>", "<br>", line)
       
       # Gestion des éléments inlines
       for elt in config.eltInline:
@@ -195,14 +234,171 @@ def makeDataAbsolute(source, target):
     
     # Création des datas
     data = [data]
+    index = [config.alignmentName]
     columns = ["Insertion", "Suppression", "Remplacement", "Déplacement"]   
     
     # Création du Dataframe
-    df = pd.DataFrame(data=data, columns=columns)
-    df.to_json(target, orient="records", force_ascii=False, lines=True)
+    df = pd.DataFrame(data=data, index=index, columns=columns)
+    df = df.transpose()
+    df.to_json(target, orient="split")
+    print(df)
     print("Done", "Make data absolute : ", target)
 
-""" 
+
+def makeDataMoyenne(source, target):
+  
+  with open(source, "r", encoding="utf-8") as file:
+    # Parsing du document
+    soup = BeautifulSoup(file, "html.parser")
+    
+    data = []
+    
+    # Data insertion
+    dataInsertion = []
+    eltList = soup.find_all("span", attrs = {"class" : "insertion"})
+    for elt in eltList:
+      dataInsertionNB = 0 
+      if elt.text:
+        tokens = nltk.word_tokenize(elt.text)
+        for tok in tokens:
+          dataInsertionNB += 1
+      if elt.tail:
+        tokens = nltk.word_tokenize(elt.tail)
+        for tok in tokens:
+          dataInsertionNB += 1
+      dataInsertion.append(dataInsertionNB)
+    data.append(statistics.mean(dataInsertion))
+    
+    # Data suppression
+    dataSuppression = []
+    eltList = soup.find_all("span", attrs = {"class" : "suppression"})
+    for elt in eltList:
+      dataSuppressionNB = 0
+      if elt.text:
+        tokens = nltk.word_tokenize(elt.text)
+        for tok in tokens:
+          dataSuppressionNB += 1
+      if elt.tail:
+        tokens = nltk.word_tokenize(elt.tail)
+        for tok in tokens:
+          dataSuppressionNB += 1
+      dataSuppression.append(dataSuppressionNB)
+    data.append(statistics.mean(dataSuppression))
+
+    # Data remplacement
+    dataRemplacement = []
+    eltList = soup.find_all("span", attrs = {"class" : "remplacement"})
+    for elt in eltList:
+      dataRemplacementNB = 0 
+      if elt.text:
+        tokens = nltk.word_tokenize(elt.text)
+        for tok in tokens:
+          dataRemplacementNB += 1
+      if elt.tail:
+        tokens = nltk.word_tokenize(elt.tail)
+        for tok in tokens:
+          dataRemplacementNB += 1
+      dataRemplacement.append(dataRemplacementNB)
+    data.append(statistics.mean(dataRemplacement))
+
+    # Data deplacement
+    dataDeplacement = []
+    eltList = soup.find_all("span", attrs = {"class" : "deplacement"})
+    for elt in eltList:
+      dataDeplacementNB = 0 
+      if elt.text:
+        tokens = nltk.word_tokenize(elt.text)
+        for tok in tokens:
+          dataDeplacementNB += 1
+      if elt.tail:
+        tokens = nltk.word_tokenize(elt.tail)
+        for tok in tokens:
+          dataDeplacementNB += 1
+      dataDeplacement.append(dataDeplacementNB)
+    data.append(statistics.mean(dataDeplacement))
+    
+    # Création des datas
+    data = [data]
+    index = [config.alignmentName] 
+    columns = ["Insertion", "Suppression", "Remplacement", "Déplacement"]   
+    
+    # Création du Dataframe
+    df = pd.DataFrame(data, index=index, columns=columns)
+    df = df.transpose()
+    df.to_json(target, orient="split")
+    print(df)
+    print("Done", "Make data moyenne : ", target)
+
+
+"""
+makeDataPersonnage : moyenne for each scripture operation
+  @source : tei with 
+  @target : json file with data
+"""
+
+def makeDataPersonnage(source, target):
+  
+  with open(source, "r", encoding="utf-8") as file:
+    soup = BeautifulSoup(file, "html.parser")
+    
+    personnage = soup.find_all("sp")
+    
+    # Make list personnage
+    persoList = []
+    for perso in personnage:
+      who = str(perso.get("who"))
+      persoList.append(who)
+    # persoList = persoList.sort()  
+    persoList = set(persoList)
+    persoList = list(persoList)
+    
+    # Make data
+    insertionData = []
+    suppressionData = []
+    remplacementData = []
+    deplacementData = []
+    
+    # Count Data
+    for who in persoList:
+      
+      # Initialize count
+      insertionNb = 0
+      suppressionNb = 0
+      remplacementNb = 0
+      deplacementNb = 0
+      
+      # Each personnage
+      personnage = soup.find_all("sp", attrs = {"who" : who})
+      for perso in personnage:
+        # Insertion
+        insertion = perso.find_all("seg", attrs = {"subtype" : "insertion"})
+        insertionNb = insertionNb + len(insertion)
+        # Suppression
+        suppression = perso.find_all("seg", attrs = {"subtype" : "suppression"})
+        suppressionNb = suppressionNb + len(suppression)
+        # Remplacement
+        remplacement = perso.find_all("seg", attrs = {"subtype" : "remplacement"})
+        remplacementNb = remplacementNb + len(remplacement)
+        # Deplacement
+        deplacement = perso.find_all("seg", attrs = {"subtype" : "deplacement"})
+        deplacementNb = deplacementNb + len(deplacement)
+      
+      # Ajout des données
+      insertionData.append(insertionNb)
+      suppressionData.append(suppressionNb)
+      remplacementData.append(remplacementNb/2)
+      deplacementData.append(deplacementNb/2)
+    
+    # Création DataFrame
+    data = [insertionData, suppressionData, remplacementData, deplacementData]
+    index = ["insertion", "suppression", "remplacement", "deplacement"]
+    columns = persoList
+    df = pd.DataFrame(data, index=index, columns=columns)
+    df.to_json(target, orient="split")
+    
+  print("Done", "Make data personnage : ", target)
+
+"""
 Function principal : fonction principale
 """
 
@@ -214,15 +410,11 @@ def main():
   print("<><><><><><><>")
   print("")
  
-  # Créate dir
+  # Create dir
   createDir(config.dirInterfaceName)
-  createDir(config.dirInterfaceData)
-  createDir(config.dirInterfaceResource)
   
-  # Deplace resource files
-  shutil.copy(config.dirSourceCSS, config.dirInterfaceResource)
-  shutil.copy(config.dirSourceJS, config.dirInterfaceResource)
-  shutil.copy(config.dirSourceHTML, config.dirInterfaceName)
+  # Move dir and files in interface
+  moveFiles()
   
   # Create interface
   makeInterface(config.finalTei, config.finalHTML)
@@ -230,8 +422,15 @@ def main():
   # Correction interface
   correctionInterface(config.finalHTML)
   
-  # Création des données absolues
+  # Make data absolute
   makeDataAbsolute(config.finalHTML, config.dataAbsoluteCSV)
+  
+  # Make data moyenne
+  makeDataMoyenne(config.finalHTML, config.dataMoyenneCSV)
+  
+  # Make data personnage
+  makeDataPersonnage(config.finalStatisticTei, config.dataPersonnageCSV)
+  
     
 """ 
 Command
