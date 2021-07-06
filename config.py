@@ -36,11 +36,10 @@ finalStatisticTei = os.path.join(dirAlignmentTei, alignmentName, alignmentName +
 
 
 # Paramètre des dossiers pour l'interface
-dirSourceIndex = os.path.abspath("resource/index.php")
+dirSourceIndex = os.path.abspath("resource/index.html")
 
 dirSourceCSS = os.path.abspath("resource/css")
 dirSourceJS = os.path.abspath("resource/js")
-dirSourceResource = os.path.abspath("resource/resource")
 
 dirInterface = os.path.abspath("interface")
 dirInterfaceName = os.path.join(dirInterface, alignmentName)
@@ -48,10 +47,9 @@ dirInterfaceTei = os.path.join(dirInterface, alignmentName, "xml-tei")
 dirInterfaceData = os.path.join(dirInterface, alignmentName, "data")
 dirInterfaceCSS = os.path.join(dirInterface, alignmentName, "css")
 dirInterfaceJS = os.path.join(dirInterface, alignmentName, "js")
-dirInterfaceResource = os.path.join(dirInterface, alignmentName, "resource")
 dirInterfaceTemplate = os.path.join(dirInterface, alignmentName, "template")
 
-finalHTML = os.path.join(dirInterface, alignmentName, "index.php")
+finalHTML = os.path.join(dirInterface, alignmentName, "index.html")
 
 # Paramètre pour les statistiques
 dataAbsoluteCSV = os.path.join(dirInterface, alignmentName, "data/dataAbsolute.json")

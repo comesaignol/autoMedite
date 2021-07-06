@@ -39,7 +39,6 @@ def moveFiles():
   createDir(config.dirInterfaceTei)
   shutil.copytree(config.dirSourceCSS, config.dirInterfaceCSS)
   shutil.copytree(config.dirSourceJS, config.dirInterfaceJS)
-  shutil.copytree(config.dirSourceResource, config.dirInterfaceResource)
   
   # Move fichier interface
   shutil.copy(config.dirSourceIndex, config.dirInterfaceName)
@@ -241,7 +240,6 @@ def makeDataAbsolute(source, target):
     df = pd.DataFrame(data=data, index=index, columns=columns)
     df = df.transpose()
     df.to_json(target, orient="split")
-    print(df)
     print("Done", "Make data absolute : ", target)
 
 
@@ -326,7 +324,6 @@ def makeDataMoyenne(source, target):
     df = pd.DataFrame(data, index=index, columns=columns)
     df = df.transpose()
     df.to_json(target, orient="split")
-    print(df)
     print("Done", "Make data moyenne : ", target)
 
 
