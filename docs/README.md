@@ -1,1 +1,0 @@
-# autoMedite-demo
