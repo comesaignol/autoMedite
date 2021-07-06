@@ -116,8 +116,9 @@ hr {
 		/*** DOWNLOAD ***/
 		/****************/
 
-#download i {
+#downloadTEI i, #downloadCSV i {
 	font-size: 18pt;
+	margin-right: 10px;
 }
 
 #download i:hover {
