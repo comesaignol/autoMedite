@@ -18,9 +18,10 @@ AutoMEDITE se propose de répondre à ces limites en ajoutant une interface loca
 | Interface locale                         | -      | +          |
 | Outil d'édition de texte                 | -      | +          |
 | Statistiques dynamiques                  | -      | +          |
+
 La version proposée au téléchargement est la version 1.1 dont les fonctionnalités sont développées dans la section `Historique des versions`.
 
-# Démo
+# Contenus
 
 Vous souhaitez intégrer AutoMEDITE dans votre projet ? Explorez rapidement vos corpus textuels ? Le code source est disponible au téléchargement à l’adresse suivante :  https://github.com/comesaignol/autoMedite.
 
@@ -35,29 +36,27 @@ Une fois le dossier téléchargé et décompressé, vous obtiendrez le répertoi
         ├── docs/
         ├── interface/
             ├── resource/
+        ├── media/
         ├── src/
         │README.md
         │requirements.txt
 
-Le moyen le plus simple pour tester l’interface est d’installer le répertoire « docs » dans un serveur local configuré avec Apache et PHP. L’interface peut ensuite être consultée à l’adresse suivante :
+Le répertoire `src` (= source) contient les modules pythons utilisés par autoMedite dont on trouvera ci-après une représentation visuelle à haut niveau :
+
+![Présentation d'autoMedite](media/autoMedite.png)
+
+Les modules composant autiMedite s'utilisent de la manière suivante : 
+
+* `xml2txt.py`. Module convertissant les fichiers XML-TEI au formats TXT ;
+* `alignmentRaw.py`. Module utilisant automatiquement MEDITE et récupérant les résultats au format HTML ;
+* `alignmentCorr.py`. Module de débogage accompagnant l’utilisateur à la correction de l’alignement issu de MEDITE ;
+* `alignmentTei.py`. Module transférant les résultats de l’alignement de MEDITE dans les fichiers XML-TEI de départ ;
+* `interface.py`. Module générant à partir des fichiers XML-TEI alignés une interface de consultation locale et les données statistiques ;
+* `config.py`. Fichier de configuration fournissant pour chacun des modules les chemins relatifs des dossiers ;
+
+Le moyen le plus simple pour tester l’interface est d’installer le répertoire `docs` dans un serveur local configuré avec Apache et PHP. L’interface peut ensuite être consultée à l’adresse suivante :
 
     http://localhost/autoMedite/docs/1654-1878/index.php
-
-# Contenus
-
-Vous trouverez les fichiers suivants dans le répertoire autoMedite :
-
-* **README.md**. Documentation présentant le projet ;
-* **requirements.txt**. Fichier listant les librairies python à installer ;
-
-Le répertoire `src` contient les modules pythons utilisés par autoMedite dont on trouvera ci-après une représentation visuelle à haut niveau ainsi qu'une rapide présentation.
-
-* **xml2txt.py**. Module convertissant les fichiers XML-TEI au formats TXT ;
-* **alignmentRaw.py**. Module utilisant automatiquement MEDITE et récupérant les résultats au format HTML ;
-* **alignmentCorr.py**. Module de débogage accompagnant l’utilisateur à la correction de l’alignement issu de MEDITE ;
-* **alignmentTei.py**. Module transférant les résultats de l’alignement de MEDITE dans les fichiers XML-TEI de départ ;
-* **interface.py**. Module générant à partir des fichiers XML-TEI alignés une interface de consultation locale et les données statistiques ;
-* **config.py**. Fichier de configuration fournissant pour chacun des modules les chemins relatifs des dossiers ;
 
 # Installation
 
@@ -181,8 +180,9 @@ Ici, `1654-1878` désigne le nom de l'alignement, il est créé automatiquement 
 Fonctionnalités à venir :
 
 * Gestion des métadonnées disponibles dans les `headers` des fichiers XML-TEI.
-* Ajout d'une option pour passer d'un mode de lecture jour / nuit.
+* Création d'un module dédié à la création / gestion des statistiques.
 * Ajout d'une nouvelle statistique pour calculer le volume de réécriture par personnage, pondéré par leur poids de parole.
+* Ajout d'une option pour passer d'un mode de lecture jour / nuit.
 
 # FAQ
 
