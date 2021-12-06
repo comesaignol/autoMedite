@@ -126,7 +126,7 @@ function makeDataAbsolute() {
     dataGraph.data.datasets[2].data = myValues[2][2];
     dataGraph.data.datasets[3].data = myValues[2][3];
     // Création du diagramme
-    var myBarChart = new Chart($("#dataAbsolute"), dataGraph);
+    var myBarChart = new Chart($("#dataAbsoluteCanvas"), dataGraph);
   });
 }
 
@@ -227,7 +227,7 @@ function makeDataMoyenne() {
     dataGraph.data.datasets[2].data = myValues[2][2];
     dataGraph.data.datasets[3].data = myValues[2][3];
     // Création du diagramme
-    var myBarChart = new Chart($("#dataMoyenne"), dataGraph);
+    var myBarChart = new Chart($("#dataMoyenneCanvas"), dataGraph);
   });
 }
 
@@ -327,6 +327,6 @@ function makeDataPersonnage() {
     dataGraph.data.datasets[2].data = myValues[2][2];
     dataGraph.data.datasets[3].data = myValues[2][3];
     // Création du diagramme
-    var myBarChart = new Chart($("#dataPersonnage"), dataGraph);
+    var myBarChart = new Chart($("#dataPersonnageCanvas"), dataGraph);
   });
 }

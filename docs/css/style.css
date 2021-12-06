@@ -51,13 +51,11 @@ div {
 
 h1, h2, h3, h4, h5, h6 {
 	color: white;
-	
 }
 
 h1 {
 	font-weight: bold !important;
 }
-
 
 #version1, #version2 {
 	border-right: 40px solid var(--header-bg);
@@ -78,6 +76,7 @@ pre {
 }
 
 #information i {
+	font-size: 14pt;
 	color: white;
 }
 
@@ -116,13 +115,20 @@ hr {
 		/*** DOWNLOAD ***/
 		/****************/
 
-#downloadTEI i, #downloadCSV i {
-	font-size: 15pt;
-	margin-right: 10px;
+#download .row:not(:first-child) i:hover {
+	cursor: pointer;
 }
 
-#download i:hover {
-	cursor: pointer;
+/***********************/
+/*** MODAL STATISTIC ***/
+/***********************/
+
+#statisticModal a:hover {
+	color: transparent;
+}
+
+#statisticModal i {
+	font-size: 14pt;
 }
 
 /************/

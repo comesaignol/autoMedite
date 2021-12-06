@@ -29,8 +29,12 @@
    <h4 class="col-2 m-0 py-2 text-center">
     AutoMEDITE
    </h4>
-   <div class="col-9 collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+   <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+    <span class="navbar-toggler-icon">
+    </span>
+   </button>
+   <div class="col-10 collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
      <li>
       <a class="btn" data-target="#statisticModal" data-toggle="modal" type="button">
        Statistique
@@ -57,12 +61,6 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>-->
    </div>
-   <div class="col-1">
-    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-     <i class="fas fa-bars">
-     </i>
-    </button>
-   </div>
   </header>
   <!---------->
   <!-- MAIN -->
@@ -71,7 +69,7 @@
    <!----------------->
    <!-- INFORMATION -->
    <!----------------->
-   <div class="col-2 mh-100 order-1 p-2 collapse show" id="information">
+   <div class="col-2 mh-100 order-1 p-3 collapse show" id="information">
     <hr/>
     <!---------->
     <!--LEGEND-->
@@ -79,11 +77,11 @@
     <div class="container px-3" id="legend">
      <div class="row">
       <div class="col-12 px-0">
-       <h6>
+       <h5>
         <i class="fas fa-house-user">
         </i>
         Légende
-       </h6>
+       </h5>
       </div>
      </div>
      <div class="row">
@@ -91,7 +89,7 @@
        <div class="circle" id="circle-insertion">
        </div>
       </div>
-      <div class="col p-0">
+      <div class="col align-text-top p-0">
        Insertion
       </div>
      </div>
@@ -100,7 +98,7 @@
        <div class="circle" id="circle-suppression">
        </div>
       </div>
-      <div class="col p-0">
+      <div class="col align-text-top p-0">
        Suppression
       </div>
      </div>
@@ -109,7 +107,7 @@
        <div class="circle" id="circle-remplacement">
        </div>
       </div>
-      <div class="col p-0">
+      <div class="col align-text-top p-0">
        Remplacement
       </div>
      </div>
@@ -118,7 +116,7 @@
        <div class="circle" id="circle-deplacement">
        </div>
       </div>
-      <div class="col p-0">
+      <div class="col align-text-top p-0">
        Déplacement
       </div>
      </div>
@@ -127,36 +125,47 @@
     <!------------>
     <!--DOWNLOAD-->
     <!------------>
-    <div class="container px-3" id="download">
+    <div class="container px-4" id="download">
      <div class="row">
       <div class="col-12 px-0">
-       <h6>
+       <h5>
         <i class="fas fa-cloud-download-alt">
         </i>
-        Télécharger
-       </h6>
+        Téléchargement
+       </h5>
       </div>
      </div>
      <div class="row">
-      <div class="col-auto p-0">
-       <a download="" href="xml-tei/1654-1878_align-tei.xml" id="downloadTEI">
+      <div class="col-6 px-0">
+       <a download="" href="xml-tei/1654.xml" id="downloadText1">
         <i class="fas fa-file-code">
         </i>
        </a>
-      </div>
-      <div class="col p-0">
-       XML-TEI
+       
+        Texte 1 (TEI)
+       <br>
       </div>
      </div>
      <div class="row">
-      <div class="col-auto p-0">
-       <a download="" href="" id="downloadCSV">
-        <i class="fas fa-file-csv">
+      <div class="col-6 px-0">
+       <a download="" href="xml-tei/1878.xml" id="downloadText2">
+        <i class="fas fa-file-code">
         </i>
        </a>
+       
+        Texte 2 (TEI)
+       <br>
       </div>
-      <div class="col p-0">
-       CSV
+     </div>
+     <div class="row">
+      <div class="col-6 px-0">
+       <a download="" href="xml-tei/1654-1878_final.xml" id="downloadAlignment">
+        <i class="fas fa-file-code">
+        </i>
+       </a>
+       
+        Alignement (TEI)
+       <br>
       </div>
      </div>
     </div>
@@ -19922,7 +19931,7 @@
           
           Charlot
           
-           , à Génevote.
+           , à Genevote.
            
            </span>
           <br>
@@ -19997,34 +20006,130 @@
       </div>
       <div class="modal-body">
        <div class="container-fluid">
-        <div class="row">
-         <div class="col-12">
-          <h5 class="modal-title">
-           Échelle du texte
-          </h5>
+        <!----------------->
+        <!--DATA ABSOLUTE-->
+        <!----------------->
+        <div id="dataAbsolute">
+         <!--TITLE-->
+         <div class="row">
+          <div class="col-12">
+           <h5 class="modal-title">
+            Volume total des réécritures (token)
+           </h5>
+          </div>
+         </div>
+         <br/>
+         <!--DATA-->
+         <div class="row">
+          <div class="col-3 mt-5 ml-3">
+           
+            <a download="" href="data/dataAbsolute.json" id="dataAbsoluteJSON">
+             <i class="fas fa-file-code">
+             </i>
+            </a>
+            <span>
+             Données brutes (JSON)
+            </span>
+           <br>
+           
+            <a download="" href="data/dataAbsolute.tsv" id="dataAbsoluteCSV">
+             <i class="fas fa-file-code">
+             </i>
+            </a>
+            <span>
+             Données brutes (CSV)
+            </span>
+           <br>
+          </div>
+          <!--CANVAS-->
+          <div class="col-6">
+           <canvas height="250" id="dataAbsoluteCanvas">
+           </canvas>
+          </div>
          </div>
         </div>
-        <div class="row">
-         <div class="col-4">
-          <canvas height="250" id="dataAbsolute">
-          </canvas>
+        <!---------------->
+        <!--DATA MOYENNE-->
+        <!---------------->
+        <div id="dataMoyenne">
+         <!--TITLE-->
+         <div class="row">
+          <div class="col-12">
+           <h5 class="modal-title">
+            Taille moyenne d'une réécriture (token)
+           </h5>
+          </div>
          </div>
-         <div class="col-4">
-          <canvas height="250" id="dataMoyenne">
-          </canvas>
+         <br/>
+         <!--DATA-->
+         <div class="row">
+          <div class="col-3 mt-5 ml-3">
+           
+            <a download="" href="data/dataMoyenne.json" id="dataMoyenneJSON">
+             <i class="fas fa-file-code">
+             </i>
+            </a>
+            <span>
+             Données brutes (JSON)
+            </span>
+           <br>
+           
+            <a download="" href="data/dataMoyenne.tsv" id="dataMoyenneCSV">
+             <i class="fas fa-file-code">
+             </i>
+            </a>
+            <span>
+             Données brutes (CSV)
+            </span>
+           <br>
+          </div>
+          <!--CANVAS-->
+          <div class="col-6">
+           <canvas height="250" id="dataMoyenneCanvas">
+           </canvas>
+          </div>
          </div>
         </div>
-        <div class="row">
-         <div class="col-12">
-          <h5 class="modal-title">
-           Échelle des personnages
-          </h5>
+        <!-------------------->
+        <!--DATA PERSONNAGE -->
+        <!-------------------->
+        <div id="dataPersonnage">
+         <!--TITLE-->
+         <div class="row">
+          <div class="col-12">
+           <h5 class="modal-title">
+            Volume des réécritures par personnages (token)
+           </h5>
+          </div>
          </div>
-        </div>
-        <div class="row">
-         <div class="col-8">
-          <canvas height="250" id="dataPersonnage">
-          </canvas>
+         <br/>
+         <!--DATA-->
+         <div class="row">
+          <div class="col-3 mt-5 ml-3">
+           
+            <a download="" href="data/dataPersonnage.json" id="dataMoyenneJSON">
+             <i class="fas fa-file-code">
+             </i>
+            </a>
+            <span>
+             Données brutes (JSON)
+            </span>
+           <br>
+           
+            <a download="" href="data/dataPersonnage.tsv" id="dataMoyenneCSV">
+             <i class="fas fa-file-code">
+             </i>
+            </a>
+            <span>
+             Données brutes (CSV)
+            </span>
+           <br>
+          </div>
+          <!--CANVAS-->
+          <div class="col-6">
+           <canvas height="250" id="dataPersonnageCanvas">
+           </canvas>
+          </div>
          </div>
         </div>
        </div>

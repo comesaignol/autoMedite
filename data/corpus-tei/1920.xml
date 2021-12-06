@@ -1,0 +1,2118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../Teinte/tei2html.xsl"?>
+<?xml-model href="http://oeuvres.github.io/Teinte/teinte.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<!--Odette: 2018-12-12T14:47:21+01:00-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="MD_920pedant-joue_radiophonique">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title></title>
+        <author ref="author"></author>
+      </titleStmt>
+      <editionStmt>
+        <edition></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher></publisher>
+        <availability status="restricted">
+          <licence target="http://creativecommons.org/licenses/by-nc-nd/3.0/fr/">
+          </licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl></bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <creation>
+        <date when="1920"/>
+      </creation>
+      <langUsage>
+        <language ident="fr"/>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <div type="set">
+        <head>Personnages</head>
+        <castList>
+          <castItem><role xml:id="granger">Granger</role>.</castItem>
+          <castItem><role xml:id="chateaufort">Châteaufort</role>.</castItem>
+          <castItem><role xml:id="charlot">Charlot</role>.</castItem>
+          <castItem><role xml:id="paquier">Paquier</role>.</castItem>
+          <castItem><role xml:id="fleury">Fleury</role>.</castItem>
+          <castItem><role xml:id="corbineli">Corbineli</role>.</castItem>
+          <castItem><role xml:id="genevote">Genevote</role>.</castItem>
+          <castItem><role xml:id="manon">Manon</role>.</castItem>
+          <castItem><role xml:id="gareau">Gareau</role>.</castItem>
+          <castItem><role xml:id="tremblaye">De La Tremblaye</role>.</castItem>
+        </castList>
+      </div>
+    </front>
+    <body>
+      <pb n="2" xml:id="p2"/>
+      <div1 type="act">
+        <head>Acte I</head>
+        <div2 type="scene">
+          <head>Scène première</head>
+          <stage>Granger, Châteaufort, [Paquier].</stage>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! par les dieux ! tous les monstres ne sont pas en Afrique ! De grâce, dis-moi, toi qui me demandes ma fille en mariage, qui tu es réellement ; donne-moi la définition de ton individu, car je te vois si maigre et si mal en point que j’hésite à penser que tu sois un homme. Ne serais-tu point plutôt un être imaginaire, une Chimère, un phénomène immatériel, un extrait de substance primordiale, un spectre habillé de drap noir ? Oui, tu n’es sans doute que cela, ou tout au plus, un grimaud d’Enfer, qui fait l’école buissonnière.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Puisque je te vois curieux de connaître les grandes choses, je veux t’apprendre les miracles de mon berceau. Sache que la Nature, voyant germer du monde un essaim de petits Dieux affamés, et craignant que cette vermine venant à pulluler n’infectât à la fin la Terre ; après le Ciel, voulut, à ces Monstres, opposer un Hercule. Cela lui donna la hardiesse de s’imaginer qu’elle me pouvait produire. Pour ce faire, elle empoigna les âmes de Samson, d’Hector, d’Achille, d’Ajax, de Cyrus, d’Épaminondas, d’Alexandre, de Romule, de Scipion, d’Hannibal, de Sylla, de Pompée, de Pyrrhus, de Caton, de César et d’Antoine. Puis les ayant rectifiées, calcinées, pulvérisées, elle <pb n="3" xml:id="p3"/>réduisit le tout en un sublimé spirituel qui n’attendait plus qu’un fourreau pour… S’y fourrer ! La Nature, glorieuse de son succès, ne put le garder pour elle, et clabauda par le monde sa joie d’avoir créé ce chef-d’œuvre.</p>
+            <p>L’Art en devint jaloux et fâché, disait-il, qu’une teigneuse eut, à elle seule, la gloire de m’avoir engendré, la traita d’orgueilleuse et d’ingrate. La Nature riposta et tous deux se prirent aux cheveux et se battirent comme des chiffonniers. Le tintamarre des démentis, des soufflets, des bastonnades, m’éveilla ; je les vis et, jugeant que leurs démêlés ne semblaient pas devoir se terminer de sitôt, pour les mettre d’accord, je pris le parti de me créer moi-même.</p>
+            <p>Quant aux Dieux pour lesquels j’étais venu au monde, dans le but d’entraver leurs excès, je les convoquai et leur tins ce langage : « Gaillarde troupe, mon intention n’était tout d’abord rien moins que de vous annihiler, mais, de crainte qu’on me reprochât d’avoir facilement triomphé, d’êtres impuissants, voici ce que j’ordonne de votre sort. Vous autres Dieux, qui savez si bien courir, comme Saturne, ce goinfre qui court à l’infirmerie, Jupiter qui depuis qu’il eut la tête fendue par Vulcain, court la campagne, Mars qui comme soldat, court aux armes, Apollon qui court après les rimes, Mercure qui court la poste, Diane Chasseresse qui courre les bêtes, vous me ferez le plaisir, s’il vous plaît, de monter à califourchon chacun sur une Étoile. Et là, vous pourrez cou<pb n="4" xml:id="p4"/>rir tout votre saoul, et nous laisserez en paix.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Eh ! par ma foi, voilà bien justement les sept planètes !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Paix, mon valet ! Et dis-moi, Châteaufort, que fîtes-vous des autres dieux ?</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Midi sonna, la faim me prit, j’en fis un ragoût pour mon dîner.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Seigneur ! Ce fut justement à cette époque-là que cessèrent les oracles !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Exactement ! Et dès lors ma complexion prenant part à ce salmigondis de Dieux et de héros, mes actions ont toutes été héroïques ou divines, car si je regarde, c’est en lynx, si j’engendre, c’est en Deucalion, si je pleure, c’est en <foreign xml:lang="lat">Mater Dolorosa</foreign>, si je ris, c’est en Homère, si je dors, c’est en Morphée, si je veille, c’est en Argus, si je marche, c’est en Juif-Errant, si je cours, c’est en Zèbre, si je vole, c’est en financier, si je m’arrête, c’est en Dieu terme, si je mange c’est en Gargantua, si je bois, c’est en éponge. Enfin, vous voyez, l’être parfait qui démontre que l’histoire du Phénix n’est pas un conte.</p>
+          </sp>
+          <pb n="5" xml:id="p5"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Il est vrai qu’à l’âge que vous avez, sans même de poil au menton, vous semblez bien, tout comme le Phénix, être incapable d’engendrer. Vous n’êtes ni masculin ni féminin, mais neutre. Vous êtes de ceux dont le beau sexe</p>
+            <lg>
+              <l>Ne peut ouïr le Nominatif,</l>
+              <l>À cause de leur génitif,</l>
+              <l>Et souffre mieux le vocatif</l>
+              <l>De ceux qui n’ont point de datif,</l>
+              <l>Que de ceux dont l’Accusatif</l>
+              <l>Apprend qu’ils ont un… Ablatif !</l>
+              <l>J’entends que le diminutif</l>
+              <l>Qu’on fit de votre génitif</l>
+              <l>Vous prohibe le conjonctif !</l>
+              <l>Donc puisque vous êtes passif</l>
+              <l>Et ne pouvez pas être actif,</l>
+              <l>Témoin le poil indicatif</l>
+              <l>Qui m’en est fort persuasif.</l>
+              <l>Je vous fais un impératif</l>
+              <l>De n’avoir jamais d’optatif</l>
+              <l>Pour aucun genre sub… jonctif.</l>
+              <l>Ou je fais sur vous l’adjectif</l>
+              <l>Du soufflet le plus positif,</l>
+              <l>Qui jamais eut comparatif.</l>
+              <l>J’en serai le distributif</l>
+              <l>Et vous le sujet… collectif.</l>
+              <l>Car je n’ai le bas si chétif,</l>
+              <l>Ni vous le talon si furtif</l>
+              <l>Que vous ne fussiez portatif</l>
+              <l>D’un coup bien significatif.</l>
+              <l>Pour résoudre ce logogrif,</l>
+              <l>Si votre esprit est trop tardif,</l>
+              <l>À ces mots soyez attentif :</l>
+              <l>Je fais vœu de me faire juif</l>
+              <l>Au lieu d’eau, de boire du suif</l>
+              <pb n="6" xml:id="p6"/>
+              <l>D’être plus damné que Calif,</l>
+              <l>De me rendre en Tunis captif,</l>
+              <l>Bref, par les mains d’un sort hâtif,</l>
+              <l>Couronné de cyprès et d’ifs,</l>
+              <l>Passer dans le mortel esquif,</l>
+              <l>Dans le pays… définitif,</l>
+              <l>Si jamais je deviens rétif</l>
+              <l>À l’équitable exécutif</l>
+              <l>Du vœu dont je suis l’inventif,</l>
+              <l>Et duquel le préparatif,</l>
+              <l>Est, Monsieur, ce bâton massif</l>
+              <l>Voilà mon vouloir décisif</l>
+              <l>Et mon testament, mort ou vif !</l>
+            </lg>
+            <p>Mais vous parler ainsi, c’est vous donner à résoudre les énigmes du Sphinx ; c’est perdre son huile et son temps, écrire sur la mer, bâtir sur le sable et fonder sur le vent. Car enfin, si vous avez quelque teinture des lettres, elle n’est pas de première qualité, comme celle des Gobelins. Je crois bien par Jupiter Ammon, que vous êtes un peu timbré.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Des lettres ! Que me dites-vous là ? Des âmes de terre et de boue peuvent s’amuser à ces sornettes, pour moi, je n’écris que sur les corps humains.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ouais, je vois cela. C’est peut-être ce qui vous donne envie d’imprimer vos lèvres sur les joues de ma fille. Évidemment, la pauvrette ne demanderait pas mieux, car une femme aujourd’hui aime mieux les bêtes que les hommes. Cependant, je vous dirai : Nenni, je n’y consens pas ! et pour deux raisons. Premièrement, à cause que vous <pb n="7" xml:id="p7"/>êtes veuf d’une jeune femme qui vous fit faire plus de chemin en huit jours, que le soleil n’en fait en huit mois dans le Zodiaque, et qui vous conduisit de la Vierge au Verseau sans que vous eussiez vu d’autre signe en passant que celui du Capricorne.  Secondement, c’est que votre bourse est malade d’une consomption dont la mienne appréhende la contagion.</p>
+            <p>Je sais que votre valeur est recommandable et que votre seule mine ferait trembler le plus ferme spadassin d’aujourd’hui ; mais, en cet âge de fer on juge de nous par <hi rend="i">ce que nous avons</hi> et non pas parce que nous <hi rend="i">sommes</hi>. La pauvreté est un crime, et si vous me demandez : « <foreign xml:lang="lat">Cur tibi despicior</foreign> », je vous réponds : « <foreign xml:lang="lat">Nunc omnibus itur ad aurum</foreign> ». C’est ainsi, et je suis plus ébloui par le charme d’un riche laboureur que par le manteau troué d’un gentilhomme à la côte. Veuillez donc ne plus approcher ma fille en conquérant. Quoique j’aime la grammaire, en cette occasion, je ne verrais pas avec plaisir s’accorder le masculin avec le féminin.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Et pourtant, Dieu me damne, votre fille est folle de moi ! Que voulez-vous ! Je n’ai jamais pu regarder une femme sans la blesser. « Généreux gentilhomme, me dit-elle l’autre jour. La pauvrette ne pouvait <pb n="8" xml:id="p8"/>me donner d’autres titres. Elle ne savait pas mes qualités. L’Univers a besoin d’un maître ; si vous ne me regardez d’un œil de miséricorde, la race en est éteinte en vous. Vous êtes un Alexandre, je suis une Amazone ; faisons sortir de nous deux un « <hi rend="i">Plus-que-Mars</hi> » qui, après avoir porté les armes aux deux bouts de la terre, fondera un si puissant empire que jamais le Soleil ne se couchera pour ses habitants. » J’aurais de la peine à me rendre à cette passion, mais enfin, je me laissai aller à cet amour. Tant de gloire pourrait vous rendre orgueilleux ; il ne le faut pas, vous deviendrez hautain avec les petites gens. Humiliez-vous plutôt en considérant que j’ai choisi votre néant pour faire hautement éclater ma puissance. Ne craignez pas que je méprise votre pauvreté ; quand il plaira à mon épée je fera de l’Amérique et de la Chine une basse-cour pour votre maison !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ô microcosme de visions fantastiques. N’as-tu pas entendu ce que je t’ai dit ? « <foreign xml:lang="lat">Vade retro</foreign> » ! Loin d’ici, si tu ne veux que je mette en action contre toi toutes les règles de l’arithmétique. Ma colère, « <foreign xml:lang="lat">primo</foreign> », commencera par la Démonstration, puis viendra ensuite une Position de soufflets ; « <foreign xml:lang="lat">Item</foreign> » une Addition de bastonnades ; d’une part, une Fraction de bras ; d’autre part, une Soustraction de jambes. Puis je ferai grêler sur toi une Multiplication de coups, tapes, taloches, horions, estocs, revers, estramaçons, et casse-museaux si épouvantables qu’après cette opération même l’œil d’un <pb n="9" xml:id="p9"/>lynx ne pourra apercevoir la moindre division ni subdivision de la plus petite parcelle de ton misérable individu.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Chétif excommunié, j’aurais déjà fait sortir ton âme par cent plaies sans la dignité de mon Être qui me défend d’ôter la vie à quelque chose de moindre qu’un géant. Sachez, Messire Granger, que je suis celui qu’on ne peut exterminer sans faire une épitaphe à la Nature. Car je suis le père de Vaillants et leur ai donné la vie à tous.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <stage>(À part.)</stage>
+            <p>Entrons dans ses vues pour nous en débarrasser !</p>
+            <stage>(Haut.)</stage>
+            <p>Pardonnes-moi, grand Prince, que dis-je ? grand Prince, Roi ! Empereur ! Dieu ! Oui Dieu ! Mais comment réaliser qu’un Dieu peut se loger chez un homme ? Me voici au pied de vos autels.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Relevez-vous, Monsieur le Curé, je suis content. Choisissez où vous voulez régner, et cette main vous bâtira un trône dont l’escalier sera fait des Cadavres de six cents Rois.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Si je règne sur votre cœur, mon Empire sera plus grand que le monde !</p>
+            <p>(Au micro.)</p>
+            <p>Oh ! j’ai une idée ! si je pouvais me servir de cet énergumène pour écarter de La Tremblaye, cet autre indésirable prétendant à la main de ma fille.</p>
+            <stage>(Haut.)</stage>
+            <p>Seigneur, je voudrais vous demander de me protéger. Je ne sais quel gentillâtre <pb n="10" xml:id="p10"/>qui à l’insolence de marcher sur vos brisées, un Monsieur de La Tremblaye je crois…</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>N’allez pas plus loin ! je craindrais que nos yeux en courreux ne jetassent des étincelles dont quelqu’une par mégarde vous pourrait consumer. Un mortel aurait donc eu la témérité de se chauffer au même feu que moi, et je ne punirais pas les quatre Éléments qui l’ont souffert ! Mais je ne puis parler, tant la rage me transporte ! Je m’en vais faire pendre l’Eau, l’Air, la Terre et le Feu et songer au genre de mort dont nous exterminerons ce Pygmée qui veut faire le colosse ! Adieu…</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 2</head>
+          <stage>Granger, Paquier.</stage>
+          <p>Ouf ! Le voilà parti ! Eh bien, Paquier, mon digne serviteur, en voilà-t-il pas une bonne digue pour opposer aux terreurs journalières que me donne Monsieur de la Tremblaye ? Car La Tremblaye à cause de Châteaufort, Châteaufort à cause de La Tremblaye, renonceront à poursuivre ma fille. Ce sont deux poltrons si éprouvés que si jamais ils se battent, ils se demanderont grâce l’un à l’autre. Me voici cependant embarqué sur une mer où la moitié du monde a fait naufrage. Amour chez moi, amour au dehors, amour partout. Je n’ai qu’une fille à marier, et j’ai trois gendres prétendus. L’un se dit brave, nous savons ce qu’il en est ; l’autre riche, c’est à voir ; le troisième gentilhomme, mais il mange trop ! Ô Nature, croirais-tu te mettre en frais, si tu fagotais seulement <pb n="11" xml:id="p11"/>trois belles qualités en un individu. Ah ! Pierre Paquier le monde va se renverser.</p>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Tant mieux, car autrefois, j’ai déjà entendu dire que tout était à l’envers. Si l’on renverse aujourd’hui ce qui était à l’envers, on le remettra à l’endroit.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mais ce n’est pas encore là mon plus grand souci : j’aime et mon fils est mon rival ! Depuis le jour où cette furieuse pensée s’est logée au ventricule de mon cerveau, je mange pour toute viande qu’un « <foreign xml:lang="lat">pænitet tædet miseret</foreign> ». Ah ! c’en est fait ! je vais me pendre.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Là, là, mon maître. Espérez en Dieu, il vous assistera. Il assiste bien les Allemands qui ne sont pas de ce pays-ci.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Si j’envoyais mon fils à Venise. Sans doute, c’est le meilleur. C’est le meilleur ! Oh oui ! sans doute ! Bien ! Demain donc, je l’embarquerai sur la mer.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Au moins ne l’embarquez pas sans lui donner de l’anis étoilé. Les médecins en ordonnent contre les vents.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Va-t-en dire à mon fils Charlot Granger qu’il accoure promptement ici. Dis-lui que c’est <hi rend="i">moi</hi> qui le demande.</p>
+          </sp>
+          <pb n="12" xml:id="p12"/>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>J’y vais !</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 3</head>
+          <sp who="granger">
+            <speaker>Granger<stage>,</stage><stage> seul.</stage></speaker>
+            <p>En éloignant de mon foyer ce vorace qui me mange tout mon bien, chaque sou de mes rentes deviendra un écu, et le marteau de la jalousie ne sonnera plus les longues heures du désespoir, dans le clocher de mon âme. D’un autre côté, dois-je me marier, moi que les Livres ont instruit des accidents qu’entraîne avec soi le mariage. Que je me marie ou non, je suis assuré d’en avoir du regret. Qu’importe ! La femme prétendue n’est pas grande. Tant mieux ! ce sera autant d’économies sur l’aunage de ses vêtements !… Mais je crois que Paquier a bu l’eau du Léthé et qu’il a oublié ma commission, à moins que mon fils ne marche comme un écrevisse. Je vais aller à sa rencontre.</p>
+            <stage>(Pendant qu’il sort d’un côté, Paquier et Charlot Granger entrent de l’autre.)</stage>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 4</head>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Je ne puis rien comprendre à ton galimatias, Paquier.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>C’est pourtant clair, Monsieur Charlot.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Enfin, ne saurais-tu me dire qui c’est qui me demande.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Je vous dis que c’est moi.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Comment, toi ?</p>
+          </sp>
+          <pb n="13" xml:id="p13"/>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Je ne vous dis pas moi ; mais je vous dis que c’est Moi. Car il m’a dit en partant : dis-lui que c’est Moi.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Ne serait-ce pas mon père que tu veux dire ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Hé ! Vraiment oui ! À propos, je crois qu’il a envie de vous envoyer sur mer.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Hé ! quoi faire, Paquier ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Il ne l’a point dit, je pense que c’est pour voir la campagne.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>J’ai trop voyagé, j’en suis las !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Qui, vous ? Je gagnerais ce chapeau de Cocu, qui est un vieux de votre père, que vous n’avez jamais vu la mer que dans une écaille d’huître.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Et toi, Paquier, en as-tu vu plus que moi ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Oui-da ! J’ai vu Chaillot, Saint-Cloud, Vaugirard.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Je pense, ma foi, que mon voyage ne sera pas plus long que les tiens. Tu peux assurer mon père qu’il n’est pas désirable…</p>
+          </sp>
+          <pb n="14" xml:id="p14"/>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 5</head>
+          <sp who="granger">
+            <speaker>Granger<stage>, qui vient d’entrer.</stage></speaker>
+            <p>Que tu demeures plus longtemps ici !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Ah ! Mon père, vous m’avez fait peur. Je ne vous savais pas si près d’ici.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Charlot, il faut partir. Songe à faire tes adieux aux Dieux Lares, protecteurs du foyer paternel ; car demain, l’Aurore aux doigts de rosé aura à peine quitté la couche de Tithon, son épouse, qu’il faudra te confier à la discrétion de Neptune, qui porte les navires. C’est à Venise que je t’envoie. En effet, ton oncle « <foreign xml:lang="lat">Tuus enim patruus</foreign> » m’a mandé qu’étant privé d’héritiers mâles il avait besoin de quelqu’un sur la fidélité de qui il pût se reposer.</p>
+          </sp>
+          <pb n="15" xml:id="p15"/>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Je vois bien, Monsieur, que vous voulez m’éprouver et savoir si je serais assez lâche pour vous abandonner et vous arracher ainsi des bras un fils unique. Quoique vous puissiez alléguer, je demeurerai sans cesse auprès de vous et serai votre bâton de vieillesse.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ce n’est pas pour vous demander votre avis, mais pour vous apprendre ma volonté, que je vous ai fait venir.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>,</stage><stage> en colère.</stage></speaker>
+            <p>C’est donc sérieusement que vous m’ordonnez de partir ? Eh bien ! Sachez que je ne puis le faire, et ne le ferai jamais ! Mais voici le cousin Fleury qui vient à votre rencontre. Pour moi, je vais faire un tour… J’ai besoin de prendre l’air après ce que vous venez de me dire.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 6</head>
+          <stage>Granger, Fleury, Paquier.</stage>
+          <sp who="fleury">
+            <speaker>Fleury</speaker>
+            <p>Hé bien, mon cousin, comment vous portez-vous ? <pb n="16" xml:id="p16"/>Allons-nous bientôt marier votre fille ? son fiancé est-il arrivé ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>C’est vous, mon cousin, qui arrives sous de bien fâcheux auspices. Mais soyez l’arbitre de ma destinée, noire ou blanche, et le confident de toutes mes pensées. Non ! Ce riche gendre n’est pas encore venu. Je l’attendais ici, mais lorsque je ne pensais qu’à ma joie, voici que je suis investi des glaives de la douleur. Mon fils est fou, mon cousin. Que Saint-Mathurin le guérisse !</p>
+          </sp>
+          <sp who="fleury">
+            <speaker>Fleury</speaker>
+            <p>Bon dieu ! Depuis quand ce malheur est-il arrivé ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Hélas ! Tantôt, comme je le caressais, il a voulu se jeter à mon visage. Il piétine et grommelle qu’il n’ira point à Venise. Ho ! Ho ! Le voici, cachons-nous et écoutons-le.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 7</head>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, en colère.</stage></speaker>
+            <p>Moi ! j’irais à Venise ! et j’abandonnerais tout ce que j’aime au monde ? J’ouvrirais plutôt d’un poignard le sein de mon barbare père, et de mes propres mains, j’arracherais son cœur ! Tout plutôt que de sacrifier mes plaisirs aux caprices d’un vieillard stupide !</p>
+          </sp>
+          <pb n="17" xml:id="p17"/>
+          <sp who="fleury">
+            <speaker>Fleury</speaker>
+            <p>Ô grand Dieu ! quelle rage !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Non, mon père, je n’y puis consentir !</p>
+          </sp>
+          <sp who="fleury">
+            <speaker>Fleury<stage>, </stage><stage>criant.</stage></speaker>
+            <p>Il est fou ! Il est fou ! Liez-le, mon cousin, il ne faut qu’un malheur !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, </stage><stage>appelant.</stage></speaker>
+            <p>Au secours, cuistres, appariteurs, piliers de classes, valets de ce lèges, exécuteurs de justice écolière ! « <foreign xml:lang="lat">Adeste subito, adeste</foreign> ! » jetez-moi promptement les bras sur ce microcosme erroné de chimères abstractives, et liez-le aussi fort que Prométhée sur le Caucase.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, criant.</stage></speaker>
+            <p>On aura beau faire, je n’irai pas !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Gardez bien qu’il n’échappe, il ferait de la chair à pâté de nos scientifiques substances !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, radouci et hypocrite.</stage></speaker>
+            <p>Mais, mon père, encore dites-moi pour quel objet vous me traitez ainsi ! Ne tient-il qu’à faire le voyage de Venise pour vous contenter ? J’y suis tout prêt.</p>
+          </sp>
+          <sp who="fleury">
+            <speaker>Fleury</speaker>
+            <p>Puisqu’il consent à vous obéir, nous pouvons lui rendre la liberté.</p>
+          </sp>
+          <pb n="18" xml:id="p18"/>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Ouf ! Me voici délié ! Certes, mon père, je promets de vous obéir en toutes choses, mais aller à Venise, n’y comptez pas !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Rattachez-le, cuistres ! Rattachez-le, frelons de collège ! Rouille de mon pain, gangrène de ma substance. Comment ! cet obsédé n’a pas encore les fers aux pieds ! Vite qu’on lui mette plus d’entraves que Xeroès n’en mit à l’Océan quand il le voulut faire esclave !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Non ! Non ! mon père, ne me liez pas ! Je suis tout prêt à partir !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Allons ! Je le savais bien que mon fils était trop bien éduqué pour donner chez lui place à la frénésie ! Va, mon Dauphin, mon Enfant, mon Prince de Galles, tu seras un jour la bénédiction de mes vieux ans. Excuse un esprit prévenu de faux rapports. Je te promets en récompense de redoubler d’amour pour toi lorsque tu y seras.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Où, mon Père ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>À Venise, mon fils.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>À Venise, moi ? Plutôt la mort !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Au fou ! Au fou ! Ne voyez-vous pas comme il m’a <pb n="19" xml:id="p19"/>jeté de l’écume en parlant ! Voyez ses yeux tout révulsés. Ha ! Mon dieu ! Faut-il que j’aie un enfant fou ? Vite, qu’on me l’empoigne !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, doucereux.</stage></speaker>
+            <p>Mais encore, apprenez-moi pourquoi on m’attache !</p>
+          </sp>
+          <sp who="fleury">
+            <speaker>Fleury</speaker>
+            <p>Parce que vous ne voulez pas aller à Venise.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Moi ? Je n’y veux pas aller ? On vous le fait accroire. Hélas ! Mon père, tant s’en faut, toute ma vie j’ai souhaité avec passion de voir l’Italie, et ces belles contrées qu’on appelle le Jardin du Monde…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Enfin, mon fils, tu n’as plus besoin d’hellébore ? Enfin, ta tête reste encore aussi saine que celle d’un chou cabus après la gelée ! Viens m’embraser, viens mon Toutou et va-t-en tout de suite chercher quelque chose de gentil et de bon marché, quelque objet commun à Paris, mais rare à Venise, pour en faire présent à ton oncle, car je te vais tout à cette heure retenir une place au coche de Lyon. À tout à l’heure, mon mignon.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>A tout à l’heure, p’pa. Adieu, cuistres.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 8</head>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, seul.</stage></speaker>
+            <p>Les voilà partis ! Ah ! que de fâcheuses conjonctures ! où je me trouve embarassé ! Après toute ma feinte, il me faut ou abandonner ma maîtresse, c’est-à-dire mourir, <pb n="20" xml:id="p20"/>ou me résoudre à devenir l’hôte d’une abbaye de St-Victor ou de St-Martin, résidente habituelle des fils rebelles ! Ah ! Voilà, mon fidèle Corbineli !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Me voilà. Tout à votre service.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Hélas ! Sais-tu bien les malheurs où mon père m’engage ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Je les sais. Il vient de m’en administrer tout le détail. Il vous envoie à Venise, vous devez partir demain. Mais si vous m’écoutez, votre voyage ne sera pas long, et je pense que si le bonhomme attend votre retour pour tracer le plan de la ville, il peut dès maintenant s’en fier à la carte. Ne vous a-t-il pas commandé d’acheter ici quelque bagatelle pour en faire présent à votre oncle ? C’est un couteau qu’il vient de repasser pour s’égorger. Suivez-moi seulement.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Je te suis.</p>
+            <stage>(Ils sortent.)</stage>
+          </sp>
+          <pb n="21" xml:id="p21"/>
+        </div2>
+      </div1>
+      <div1 type="act">
+        <head>Acte II</head>
+        <div2 type="scene">
+          <head>Scène première</head>
+          <sp who="chateaufort">
+            <speaker>Châteaufort<stage>, seul.</stage></speaker>
+            <stage>(Il fait les demandes et les réponses.)</stage>
+            <p>– Vous vous êtes battu ?</p>
+            <p>– Et donc ?</p>
+            <p>– Vous avez eu l’avantage sur votre ennemi ?</p>
+            <p>– Fort bien.</p>
+            <p>– Vous l’avez désarmé ?</p>
+            <p>– Facilement</p>
+            <p>– Et blessé ?</p>
+            <p>– Hou !</p>
+            <p>– Dangereusement, s’entend !</p>
+            <p>– À travers le corps.</p>
+            <stage>(Un temps.)</stage>
+            <p>– Vous vous éloignerez ?</p>
+            <p>– Il le faut.</p>
+            <p>– Sans dire adieu au Roi ?</p>
+            <p>– Ha dame !</p>
+            <p>Mais ce sire de La Tremblaye, mordiable, par quelle mort le ferons-nous succomber ? En l’étouffant comme Hercule fit Antée… Je ne suis pas bourreau… Lui ferai-je avaler toute la mer ?… S’il était maquereau, je le ferais mourir en eau douce. Dans la flamme il n’aurait pas le temps de bien goûter la mort. Commanderai-je à la terre de l’engloutir tout vif ? Non, car comme ces petits gentillâtres sont accoutumés de manger leurs terres, celui-ci pourrait bien manger celle qui le recouvrirait ! Le déchirer par morceaux ? Ma colère ne serait pas satisfaite, si après ma mort, il restait un <pb n="22" xml:id="p22"/>seul atome de ce malheureux ! Ô Dieux, me voilà réduit à n’oser pas seulement lui défendre de vivre, puisque je ne sais comment le faire mourir ! Mais quel est ce paysan qui vient vers moi ?</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 2</head>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Vertigué, je crois quevelà un de ces mangeux de petits enfants, la vigne de la Courtille, belle apparence, mais peu de rapport.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Où vas-tu, bonhomme ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Tout devant moi.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Mais je te demande où va le chemin que tu suis ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Il ne va pas, il est immobile.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Pauvre rustre ! je te demande si aujourd’hui tu as encore bien du chemin à faire ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Nenni, je le trouverai tout fait.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Tu parais bien gaillard ! N’aurais-tu point dîné ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Dix nez ? Qu’ons-je à faire de dix nez, un seul me suffit.</p>
+          </sp>
+          <pb n="23" xml:id="p23"/>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Quel docteur ! Il en sait autant que son curé !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Ainsi suis-je. N’est-on pas bien curé quand on n’a rien dans le ventre ! Est-ce à cause que vous êtes Monsieur que vous faites tant de manières ! J’pense que vous me prenez pour queuque ignorant ! Jarnigué ! Je ne sis pas un niais. J’ai été sans reproche marguillier, bedeau, porte-offrande, Dieu et Diable !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Voilà bien du haut style !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Saches que Monsieur de Marsilly m’appelait son bâtard. « Viens ça, me dit-il une fois, je veux, ce fit-il, que tu viennes, ce fit-il, avec moi, ce fit-il dans la Turquise, ce me fit-il. Oh ! ce lui fis-je, cela vous plaît à dire ! Montré, ce me fit-il. Si da, lui refis-je. Ô, ce me fis-je à part moi. Écoute Jean, faut point faire le bougre, faut y aller. Or donc, je voyageas sur l’orient et vers la Mardi terre Année.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Tu veux dire au contraire, vers l’Orient sur la Méditerranée !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Bon ! Bon ! Je me reprends… Un verre se reprend bien… Mais vous pensez bien que je ne puis entendre tous ces tintamarres là, comme vous autres, latiniseux. J’arivis donc au deux trois de Gilles le Bâtard.</p>
+          </sp>
+          <pb n="24" xml:id="p24"/>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Au détroit de Gibraltar ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Si vous voulez. Et pis j’naviguis et j’arrivis au paîs…Au paîs… Au paîs du beurre…</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Au pays du beurre ? Que diable veux-tu dire ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Oui ! Oui ! au pays du beurre. Tant qu’y a qu’c’est un pays qu’est mou comme beurre et où les gens sont durs comme pierre. Ha ! c’est la Graisse ; et les habitants n’y sont-ils pas bien durs puisque ce sont des Grès. Et puis après cela je nous en allismes, révérence parler, en un pays si loin, si loin ; je pense que mon maître appelait cela le pays des A… Des Bi… Le pays des Bassins où tout le monde est noir comme des Antechrist.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Ah ! le pays des Abyssins !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>P’t-être bien ! Ma foi, je croyais ben n’y pas cheminer deux lieues sans y rencontrer l’diable et l’Enfer ! Mais tenez, tout ce qui me semblit de plus biau à voir, c’est ces petits Sarrasins d’Italiens ; cette petite graine d’andouille n’est pas plus grande que savez quoi, et ils savent déjà parler italien. Mais nous n’y restâmes pas longtemps. Nous partames nos jambes tout au bout du monde, dans la Turquise. <pb n="25" xml:id="p25"/>Mais ma foi ! Je disis bientôt à mon maître qu’il fallait s’en revenir ! Quelle vilenie ! Tous ces Turcs sont tretous Huguenots comme des chiens ! Mais lui, de leur bailler des exultations à la Turquoise !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Il faut dire : des exhortations à la Turque !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Tant qu’il y a qu’il les sermonnait comme il fallait.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Ton maître savait donc l’idiome turc ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Eh vraiment oui ! Tous ces idiots-là les avait-il point agréés dans son latin ? Son frère itou était bien savants, mais pas tant que lui, vu qu’il n’avait appris le latin qu’en français. Tant qu’y a qu’à la parfin, je nous en revînmes. Il apportit de c’pays-là tant de diamants rouges, de hémorroïdes vertes, et une grande épée qui atteindrait d’ici à demain. C’est avec des épées comme ça que tous ces mangeux de p’tits enfants s’battent en duel. Il apportit itou de petites fioles remplies de naissances, à cette fin se disait-il, de vivre aussi longtemps que Mathieu Salé.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort<stage>, riant.</stage></speaker>
+            <p>Ha ! Ha !… Mathusalem !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau<stage>, </stage><stage>en colère.</stage></speaker>
+            <p>Regardez-moi ce Niquedouille qui ne saurait rire sans montrer les dents !</p>
+          </sp>
+          <pb n="26" xml:id="p26"/>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Rassure-toi. Je ne rie pas de la vertu de tes essences !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>J’espère bien. Car les Naissances ont de merveilleuses propriétés.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort<stage>, </stage><stage>riant.</stage></speaker>
+            <p>Ha ! Ha ! Ha !…</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau<stage>, </stage><stage>le frappant.</stage></speaker>
+            <p>Eh ! Testigné ! vous riez comme un sot, comme un ignorant que vous êtes !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Hé là ! Hé là !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <stage>(Il le frappe.)</stage>
+            <p>Ventregué ! si vous êtes un beau parleux, morgué ! Tapons-nous donc la gueule comme il faut. Dame, faut point tant de beurre pour faire un quarteron !</p>
+            <stage>(Il le frappe.)</stage>
+            <p>Et tiens ! voilà pour toi !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Ces coups ne m’effleurent point ; au contraire, ils publient mon courage invincibles à souffrir. Toutefois, afin que tu ne te rendes pas indigne de pardon par une seconde faute, encore que ce soit une coutume de donner plutôt un coup d’épée qu’une parole, je veux bien te dire qui je suis. J’ai fait, en ma vie, septante mille combats, et n’ai jamais porté botte qui n’ait tué sans confessions.</p>
+          </sp>
+          <pb n="27" xml:id="p27"/>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Vraiment ! Vraiment ! Voilà bien de la musique de St-Innocent ! Quel embrocheux d’limaces !– Et quien quien !</p>
+            <stage>(Il le frappe.)</stage>
+            <p>— Voilà encore pour t’agacer !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Je ne sais. Dieu me damne ce que m’a fait ce maraud, je ne saurais me fâcher contre lui !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Quien ! prends encore çà !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Foi de cavalier, cette gentillesse me charme ! Voilà le gaquin du plus grand cœur que je vis jamais !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Attrape ceci !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Il faut nécessairement ou que ce belître soit mon fils, ou qu’il soit démoniaque! D’égorger mon fils à bon escient, je n’ai garde, et j’aurais tort de tuer un possédé, puisqu’il n’est pas responsable des fautes sur le Diable lui fait commettre ! Cependant, ô pauvre paysan, sache que cette épée que je porte au côté est la Mère Nourrice des fossoyeurs ; que de la tête du dernier Sophi je fis un pommeau à mon épée ; que du vent de mon chapeau, je submerge une armée navale ; et que qui veut savoir le nombre des hommes que j’ai tués, n’a qu’à poser un neuf et ensuite tous les grains de sables de la mer qui serviront de zéros !…</p>
+          </sp>
+          <pb n="28" xml:id="p28"/>
+          <sp who="gareau">
+            <speaker>Gareau<stage>, </stage><stage>le frappant.</stage></speaker>
+            <p>Tu en veux encore ?…</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Va ! Va ! Tu auras beau faire, je me suis promis de me vaincre moi-même ! Pour une fois, je me laisserai battre et ce n’est pas un maraud comme toi qui me fera changer de résolution !</p>
+            <p>Il s’en est cependant fallu de peu que je ne l’aie percé de mille coups. Si je ne m’étais retenu, j’allais tout massacrer ! Pour plus de précaution, je m’en vais faire promptement avertir Messieurs les Maréchaux qu’ils m’envoient des gardes pour m’empêcher de me battre, car je sens ma colère qui croît, mon sang qui s’allume, et les doigts qui démangent de faire un homicide ! Vite, vite, des gardes ou je ne réponds plus de moi… Et si un garde ne m’en empêcher, je vais souffler d’ici le soleil dans les cieux comme une chandelle !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau<stage>, le frappant.</stage></speaker>
+            <p>Avec ce soufflet-là, s’il vous plaît !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Merrrr… Dieu… Je m’en vais, car je te massacrerais ! Et ce serait dommage, car tu as du cœur, et j’ai besoin de soldats.</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Adieu donc, Hé ! Voici Manon, la fille de Messire Granger. Elle s’en vient avec son papa.</p>
+          </sp>
+          <pb n="29" xml:id="p29"/>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 3</head>
+          <stage>Gareau, Manon, puis Granger et Fleury.</stage>
+          <sp who="manon">
+            <speaker>Manon</speaker>
+            <p>Quel démêlé, mon pauvre Jean, avais-tu avec ce capitaine ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Oh ! il venait me ravoder l’esprit avec sa Philosophie !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Notre Gendre, mettons toutes querelles à part. Si l’hyménée porte un flambeau, ce n’est pas celui de la Discorde. Il doit allumer notre cœur, non notre fiel ! Voilà déjà ma fille qui voudrait déjà qu’on dît d’elle : « <foreign xml:lang="lat">Sub, super, la, subter, in vario sensus</foreign> ! »</p>
+          </sp>
+          <sp who="manon">
+            <speaker>Manon</speaker>
+            <p>Mon Père, je n’ai pas à former des vœux, mais à seconder les vôtres. Mettez ma main dans celle que vous avez choisie.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Rien donc ne nous empêche plus de conclure cet accord aussitôt que nous saurons la nature de vos biens. Vos facultés consistent-elles en rentes, en maisons ou en meubles ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Dame ! J’ai bien de tout çà… Par le moyen d’un héritage !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Là donc ! Qu’on apporte promptement un siège à <pb n="30" xml:id="p30"/>Monsieur ! Manon, saluez votre mari. Et cette succession est-elle importante ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Elle est de 20 000 Francs.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Vite, Paquier, qu’on mette le couvert !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>La ! La ! vous moquez-vous ? Remettez votre bonnet. Entre nous, il ne faut point tant de frimes ni de cirmonies. On dirait qu’nous ne nous connaissions point. Avez-vous oublié quand v’zétiez au Château ? Vous n’étiez qu’un petit navet en c’temps-là, vous êtes à c’t’heure-ci une citrouille bien grosse. J’avions tant parlé d’vous, feu ma ménagère et moi. Eh bé ! C’il vous était venu des cornes chaque fois que les oreilles ont dû vous corner ! Mais trêve de souvenances. C’est pas le tout des choux, faut du beurre avec.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Avez-vous ici les contrats acquisitoires des héritages dont vous parlez ?</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Nanain, vraiment, on n’veut pas m’les donner. Mais je sais bien ce qu’il y a. J’mamuse bien à des papiers, moi ! Et puis sont si mal écrits, ces brimborions d’contrats ! C’est point d’l’écriture véridique. Mais, écoutez-là ! C’est une petite succion qu’est vraimen bien grande, da, de Nicolas Gérard, v’savez vien, l’père au p’tit Louis Gérad qu’était si sémillant, vous vous rapp’lez bien ? C’est celui qui allait nager à la grande mare. Eh ben, son père est mort et j’l’avons conduit <pb n="31" xml:id="p31"/>en terre, avec l’aide de Dieu, comme dit l’autre. C’pauvre diable était allé dénicher des prés sur l’orme de la mère François. Comme il était tout au faîte, le v’là bredi-brada, qui commence à glisser tout au long des branches, et pouf ! le voilà chu, d’un coup, à la renverse ! Dieu bénit la Chrétienté ! j’crois que l’cœur lui écrabouillit dans l’ventre, car il ne grouille ni n’dit mot, sauf en trépassant : « Diable soit de la Pie et de ses piots » ! ce dit-il. Or, vous savez que lui était mon compère, et sa femme ma commère. Or, ma commère, pisque commère il y a, avait épousé en première noces le cousin de la bru Hénault de par le gendre du beau-frère de son oncle. Or celui-ci, retenez bien, avait eu des enfants de Jacquelaine Brunet… Qui mourirent sans enfant. Mais il se trouve que le neveu de Denis Gauchet avait tant à baillé à sa femme par contrat de mariage, à seule fin de frustriser les héritiers de Thomas Plançon, qui devait y rentrer, puisque sa mère-grand n’avait rien laissé aux mineux de Denis Vanel l’aîné. Or donc, il se trouve que je sommes parent en queuque manière de la veuve de Denis Vanel le jeune, et par conséquent dois-je point avoir la succion de Nicolas Giraud ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Hé ! mon ami, j’ai beau faire ouvrir à mon intelligence plus d’yeux que n’en eus jamais Argus, gardien de la vache Io, je ne vois goutte en votre affaire !</p>
+          </sp>
+          <pb n="32" xml:id="p32"/>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>C’est pourtant clair, aussi clair que la voix des enfants de Chœur de notre village. Mais écoutez la veuve de Denis Vanel le jeune, dont je sommes parent, en queuque manière, était fille du second lit de Georges Marquiau, le beau-frère de la sœur du Niveau de Pierre Brunet, donc j’vous ai parlé. Or, il est bien clair que si l’cousin de la Bru de Pierre Olivier, qui touchait de près à Jean Hénaut par le gendre du beau-frère et son Onque était père des enfants de Jaquelaine Brunet, trépassés eux-mêmes sans enfants, et qu’après tout ce tintemarre-là on n’avait rien laissé aux mineurs de Denis Vanel le jeune, j’devions bien hériter, n’est-ce pas ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, à son domestique.</stage></speaker>
+            <p>Paquier, replie la nappe. Monsieur n’a pas loisir de s’arrêter. Ma foi, beau sire, depuis le jour où la lumière fut séparée du chaos, il ne s’est pas vu sous le soleil un semblable démêlé. Dédale et son labyrinthe ne sont rien auprès. Je vous remercie pourtant de l’honneur que vous vouliez nous faire. Mais vous pouvez porter votre charme ailleurs qu’au champ virginal de ma fille. Rentre à la maison, mon enfant, tu n’as plus rien à faire ici.</p>
+          </sp>
+          <sp who="manon">
+            <speaker>Manon</speaker>
+            <p>Bien, mon père.</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Ma foi ! Aussi bien n’en voulais-je plus ! J’aime <pb n="33" xml:id="p33"/>bien mieux une bonne grosse ménagère qui travaille de ses dix doigts, qu’une de ces Mesdames de Paris qui s’en font conter par les courtisans. « Mon cœur, mamour par ci et par là ; je le veux bien, le veux-tu bien ? » et j’te saboule, et j’te patine, et j’te plaque les mains, tout d’abord aux joues, puis au cou, puis à la taille… Tant qu’y a qu’a la fin y a anguille sous roche… Tétigué ! Queuque niais ! Si j’fais les cornes aux autres, j’veux point qu’on m’les fasse !– Adieu tretous, j n’tournions à mes bêtes.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, à lui-même.</stage></speaker>
+            <p>Ô futiles espérances humaines ! J’avais été jusqu’à Vaugirard choisir un gendre, en qui je pensais que la Fortune avait racheté la parcimonie des dons physiques, et je découvre que sa bourse est aussi plate que sa mine. De même que les chats, tu ne flattes que pour égratigner, fortune malicieuse !</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 4</head>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, arrivant dans un grand mouvement.</stage></speaker>
+            <p>Ah ! Monsieur ! elle n’est pas seulement malicieuse, elle est enragée. hélas ! Tout est perdu, votre fils est mort !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mon fils est mort ! Perds-tu la raison, Corbineli ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Non, je parle sérieusement. Votre fils, à la vérité, n’est pas mort, mais il est entre les mains des Turcs.</p>
+            <pb n="34" xml:id="p34"/>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Entre les mains des Turcs ! Soutiens-moi ! C’est moi qui suis mort !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Attendez. À peine étions-nous montés dans la barque pour passer de la porte de Nesle au quai de l’École…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Et qu’allais-tu faire à l’École, Baudet ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Mon maître s’était souvenu du commandement que vous lui aviez fait d’acheter quelque bagatelle qui fut rare à Venise et de peu de valeur à Paris pour en régaler son oncle, et il s’était imaginé qu’une douzaine de cotrets n’étant pas chers, et ne s’en trouvant point par toute l’Europe d’aussi mignons qu’en cette ville, il devrait en acheter là ! C’est pourquoi nous passions vers l’École. Mais à peine avions-nous quitté la côte que le mousse de notre navire découvrait au Sud-Ouest une galère Turque, qui faisait force de rames pour nous couper sous le vent, ce qu’elle réussit à faire car nous étions mauvais voiliers. Après qu’elle eut doublé le cap de la place Bauphine, elle fonça droit sur nous de proue en poupe. Notre méprise vint de ce qu’ils arborèrent le pavillon chrétien. Et nous saluèrent en amis. Nous les laissâmes gagner au flanc ; ils nous accrochèrent. Et la soldatesque ayant sauté sur notre tillac, nous fûmes faits esclaves. Puis, nous emmenant, ils prirent le large.</p>
+          </sp>
+          <pb n="35" xml:id="p35"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! par la conque de Triton, dieu marin, qui jamais ouït parler que la mer fut à St-Cloud, et qu’il y a là des écueils, des Pirates et des galères !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>C’est en cela que la chose est merveilleuse. Et quoiqu’en France on ne les ait point vus ailleurs que là, que sait-on s’ils ne sont pas venus de Constantinople entre les deux eaux !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>En effet, mon maître, les Topinambours qui demeurent à quatre ou cinq cents lieues au-delà du monde, vinrent bien autrefois à Paris, et l’autre jour encore, les Polonais eurent bien l’impudence d’enlever en plein jour la Princesse Marie à l’Hôtel de Nevers, sans que personne osât broncher.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Mais, Monsieur, ils ne se sont pas contentés de nous faire esclaves, ils ont voulu poignarder votre fils…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Quoi ! sans confession ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Oui ! S’il ne se rachetait par de l’argent !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! Les misérables ! C’était pour frapper de crainte ce jeune cœur !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>En effet, les Turcs n’ont garde de toucher à l’argent des chrétiens, à cause qu’il porte une croix !</p>
+          </sp>
+          <pb n="36" xml:id="p36"/>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Bref, mon maître n’a jamais pu dire autre chose, sinon : « Va-t-en trouver mon père et lui dis… » Ses larmes aussitôt, étouffant sa voix, m’expliquaient mieux qu’il n’eut pu le faire, la tendresse qu’il a pour vous…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Que diable aller faire aussi dans la galère d’un Turc !… D’un Turc !… Continue…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Ces écumeurs impitoyables ne me voulaient point accorder de liberté pour venir vous trouver, mais je me jetai aux pieds de celui qui me paraît leur chef : « Ha, Monsieur le Turc, dis-je, permettez-moi d’aller avertir son Père, qui vous enverra tout à l’heure sa rançon ! »</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Tu ne devais pas parler de rançon. Ils se seront moqués de vous.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Au contraire. À ce mot, sa face s’est rassérénée. Soit, m’a-t-il dit, mais si tu n’es de retour ici dans un moment, j’irai chercher ton maître jusque dans son collège et vous pendrai tous trois aux vergues de notre navire ! » J’avais si peur d’entendre encore quelque chose de plus fâcheux, ou que le Diable ne vint m’emporter pour ce que j’étais en compagnie de ces excommuniés, que je me suis promptement jeté dans un esquif <pb n="37" xml:id="p37"/>pour vous avertir des funestes circonstances de cette rencontre.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Que diable aller faire dans la galère d’un Turc ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Qui n’a peut-être pas été à confesse depuis dix ans…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mais penses-tu que mon fils soit bien résolu d’aller à Venise ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Il ne respire autre chose…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Le mal n’est donc pas sans remède. Paquier, donne-moi le réceptacle des moyens de l’Immortalité.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Quoi ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Donne-moi de quoi écrire, imbécile.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Pourquoi faire ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Je vais écrire une lettre à ces Turcs !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>À quel propos ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Pour qu’ils me renvoient mon fils. J’en ai besoin. Après dîner. Pour leur dire qu’il faut excuser la jeunesse <pb n="38" xml:id="p38"/>qui est sujette à tant de fautes, et que s’il lui arrive encore une fois de se laisser prendre, je leur promets, foi de docteur, de ne plus les assourdir de mes réclamations…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Par ma foi, ils se moqueront de vous !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Va-t-en donc leur dire de ma part que je suis prêt à m’engager par devant notaire, à leur rendre gratuitement celui d’entre eux qui me pourra tomber entre les mains. Mais que diable aller faire dans cette galère ? Dis-leur qu’autrement, je vais aller me plaindre à la justice. Et sitôt qu’ils l’auront remis en liberté, ne vous amusez pas en route l’un et l’autre, car j’ai besoin de vous ici.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Tout cela s’appelle dormir les yeux ouverts.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mon Dieu ! faut-il être ruiné à l’âge où je suis ! Va-t-en avec Paquier, Corbineli, prends le reste des Cent sous que je lui donnai il y a huit jours, pour la dépense. Allez sans raison dans cette galère ! Prends tout ce qui reste de ces cent sous ! Ha ! malheureux, fils, tu me coûtes plus que ton poids d’or… Paye la rançon et ce qui restera emploie-le en œuvres pies. Dans la galère d’un Turc ! Bien, va-t-en ! Mais misérable fils, dis-moi, qu’allais-tu faire dans cette galère ? Va prendre dans mon armoire ce pourpoint découpé que quitta <pb n="39" xml:id="p39"/>feu mon père l’année du grand hiver.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>À quoi bon ces fariboles ? Vous n’y êtes pas. Il faut tout au moins cent pistoles pour sa rançon.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Cent pistoles ! Ha ! mon fils, je donneras ma vie pour conserver la tienne ! Mais cent pistoles! Corbineli, va-t-en lui dire qu’il se laisse pendre sans souffler mot ; mais qu’il ne s’en afflige point, car je le vengerai bien.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Mademoiselle Genevote n’était pas si sotte quand elle refusait tantôt de vous épouser sur ce qu’on l’assurait que vous seriez capable de la laisser aux mains des turcs, tout comme votre fils.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Je les ferai mentir ! S’en aller dans la galère d’un Turc ! Hé, quoi faire ? par tous les diables, dans cette galère ?…</p>
+            <stage>(En s’en allant.)</stage>
+            <p>Ô galère, galère ! comme tu mets ma bourse aux galères !</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 5</head>
+          <stage>Paquier, Corbineli.</stage>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Le voilà parti ! Pourvu qu’il n’oublie pas de rapporter l’argent !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Tout de même ! Qui diable le pressait d’aller aux <pb n="40" xml:id="p40"/>galères ? S’il eut la patience d’attendre encore huit jours, peut-être que le Roi l’y eut envoyé, et en si bonne compagnie, que les Turcs ne l’eussent pas pris…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Reviendra-t-il ? Si je retourne sans la rançon, ces Turcs vont me dévorer.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Rien à craindre ! Les mahométans ne mangent pas de porc.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 6</head>
+          <sp who="granger">
+            <speaker>Granger<stage>, </stage><stage>rentrant en maugréant et pleurant.</stage></speaker>
+            <p>Maudite galère ! Turc infâme ! Tiens, Corbineli, voici la bourse. Prends-la ! Va-t-en ! Va… Emporte tout mon bien… Viens avec moi, Paquier, ne me laisse pas seul…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Je vous suis, mon maître.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 7</head>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Les voilà dans la maison. Il ne me reste plus qu’à prévenir le jeune Charlot mon maître qui m’attend près d’ici… Mais il a senti le rôti, le voilà qui vient tout seul…</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, se cachant.</stage></speaker>
+            <p>Psst… Pssst… Corbineli ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, triomphant.</stage></speaker>
+            <p>Monjoye Saint-Denis ! Victoire ! Ville gagnée ! <pb n="41" xml:id="p41"/>Arrivez, Granger le jeune, Charlot de mon cœur ! Arrivez, ô le plus chéri des Dieux ! Tenez, prenez cette bourse…</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, joyeux.</stage></speaker>
+            <p>Allons vite Corbineli, allons inhumer cet argent, mort pour mon père, au coffre de Mademoiselle Genevote. Que disait donc la médisance de gens qui juraient que mon père, loin de consentir à mon mariage, avec M<hi rend="sup">lle</hi> Genevote, prétendait l’épouser lui-même ! Le voilà qui avance l’argent pour faire les frais de la noce. Oh ! le voilà ! filons et allons trouver notre belle… Viens, mon fidèle, mon brave Corbineli…</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 8</head>
+          <stage>Granger, Paquier.</stage>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Hélas !dans le désespoir où je suis, je ne sais où porter mes pas ! Ha ! Fortune, ne me regarderas-tu jamais qu’en rechignant ! N’aurai-je jamais de toi un sourire !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Ne savez-vous pas mon maître, que Mademoiselle Fortune est une rouée. Comment aurait-elle envie de rire ! Mais, Monsieur, sûrement que vous êtes ensorcelé…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Il faudrait peut-être prendre garde à moi. Je m’en vais jeter de l’eau bénite dans tout l’appartement. Quelque incube pourrait bien venir habiter <pb n="42" xml:id="p42"/>avec ma fille ; pis encore, me voler mon pauvre magot ! Ma foi ! Diables follets ! si vous comptez là-dessus pour dîner, vous n’aurez guère d’indigestion ! Mais trêve de ces imaginations sépulcrales ! Paquier, écoute-moi. Tu vas aller trouver la cruelle à qui j’ai donné mon cœur. Souhaite-lui de ma part le bonjour qu’elle ne me donne pas, et en lui parlant de moi, ne l’entretiens que de feux, de Charbons et de Traits. Va vite, je vais attendre chez moi le résultat de ton ambassade.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Comptez sur moi mon maître. Son logis est en face, je vais frapper à la porte.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 9</head>
+          <stage>Paquier, Genevote.</stage>
+          <sp who="paquier">
+            <speaker>Paquier<stage>, seul réfléchissant.</stage></speaker>
+            <p>De feux, de charbons et de traits ! cela n’est pas si aisé qu’on le croirait… Frappons toujours…</p>
+            <stage>(Il heurte à la porte.)</stage>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote<stage>, arrivant.</stage></speaker>
+            <p>Ah ! c’est toi, Paquier ? Comment se porte ton maître ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Il se porte comme St-Laurent sur le grill : roussi, noirci, rôti, et tout cela par le Feu…</p>
+          </sp>
+          <pb n="43" xml:id="p43"/>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je ne sais s’il souffre ce que tu dis, mais pour ma part, je te puis assurer que du jour qu’il commença de m’aimer, je méritai la palme du Martyre. Mon cher Paquier, fidèle témoin de ma passion, dis à ton maître que sa chère et malheureuse Genevote verse plus d’eau de ses yeux que sa bouche n’en boit, qu’elle soupire autant de fois qu’elle respire, qu’elle…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Mademoiselle, je vous prie, laissons-là toutes ces choses. Parlons seulement de ce dont mon maître m’a commandé de vous entretenir. Dites-moi : avez-vous beaucoup de bois pour l’hiver, car mon maître ne peut se passer de feu.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Sans mentir, j’aurais un cœur de pierre s’il n’était touché par les perfections de ton maître.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Il ne s’agit pas de çà… Répondez-moi catégoriquement. N’avez-vous jamais vu de Feu Saint-Elme ?</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je ne sais de quoi tu me parles.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Malepeste ! qu’elle est rusée ! Vous ne savez pas que votre vue a rempli mon maître d’un Feu sauvage.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Mon pauvre Paquier, de grâce parle-moi d’autre chose… Dis-moi l’Amour que j’inspire à ton maître.</p>
+          </sp>
+          <pb n="44" xml:id="p44"/>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Non ! non ! ce n’est point çà. À quoi bon rompre les chiens ? Dites-moi plutôt si cette année à la Saint-Jean vous ferez du feu Grégeois !</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je ne te comprends pas, mais plût à Dieu que je pusse découvrir ma flamme à ton maître !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Ah ! Bon cela !</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>D’un amour si violent que je souhaiterais qu’il en ressentit un semblable mais la glace de son cœur…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>La ! La ! La ! voilà que vous ferraillez ! Il y a trois Feux dans le monde, Mademoiselle : Le Feu Central, le Feu vital et le Feu élémentaire… Le premier en a trois sous lui : le feu de Collision, le feu d’attraction, et le feu de position…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>As-tu fait dessein de continuer tes extravagances jusqu’au jour du Jugement ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Mais vous-même, avez-vous fait dessein de me faire enrager jusqu’à la fin du monde ? Vous venez me parler de l’Amour que vous portez à mon maître : voilà de belles sottises ! Ce n’est pas cela qu’on vous demande. Je veux seulement que vous sachiez que Monsieur Granger n’est qu’un Feu Follet depuis qu’il vous a vue ; <pb n="45" xml:id="p45"/>que bientôt, s’il plaît à Dieu, vous brûlerez comme lui du Feu St-Antoine, et que… Mais où diable prêcher de nouveaux Feux ? Ha ! en voici d’autres, Mademoiselle. Feu votre père et feu votre mère avaient-ils fort aimé feu leurs parents ? Car feu le père et feu la mère de mon maître chérissaient passionnément leurs feu trépassés. Enfin, je puis vous jurer que le Feu est une chose si importante pour mon maître que bien qu’il soit vivant, on peut dire de lui : « Feu le pauvre Monsieur Granger, principal du collège de Beauvais… »</p>
+            <stage>(À part.)</stage>
+            <p>Et maintenant il me reste encore les charbons et les traits.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je souhaiterais autant de science qu’en a ton maître pour répondre à son disciple.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Pour Mademoiselle, je vous souhaiterais autant de charbons de peste et de clous qu’il en a… Quoi, vous riez ?… Je vous assure, moi qu’à force de brûler, il a le corps tellement noirci que si vous le voyiez, tout nu, il vous semblerait plutôt un grand Charbon qu’un Docteur…</p>
+            <stage>(À part.)</stage>
+            <p>Les traits maintenant…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Si tu as bien compris mes discours, tu lui pourras témoigner combien je l’aime. Hélas ! j’ai bien peur que cette affection ne soit pas réciproque…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Pour cela, Mademoiselle, vous avez tort de vous mettre en peine ; car il proteste tout haut qu’il se <pb n="46" xml:id="p46"/>reasent des <hi rend="i">traits</hi> que vous lui jouez, et qu’il est blessé des <hi rend="i">traits</hi> de votre Amour. Et de peur qu’avec le temps les <hi rend="i">traits</hi> de votre visage ne se ressentent de l’approche des <hi rend="i">Traits</hi> de la mort, avec mille beaux <hi rend="i">traits</hi> d’esprit il vous a peinte dans un livre intitulé : « La <hi rend="i">très</hi> belle, <hi rend="i">très</hi> parfaite et <hi rend="i">très</hi> accomplie Genevote » par son <hi rend="i">très</hi> humble, <hi rend="i">très</hi> obéissant et <hi rend="i">très</hi> affectionné serviteur. Granger ».</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Tu diras à ton maître que j’aurais été heureuse de me voir ici, mais voilà le capitaine de Châteaufort qui vient de ce côté, et je préfère m’en aller… Je reviendrai tantôt. Adieu !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Adieu, belle maîtresse de mon maître ! Que cherchez-vous, Capitaine ? Qu’avez-vous à regarder ainsi sous les bancs et derrière les auvents ?</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 10</head>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Hé, mon ami ! j’ai perdu mon garde, mon pauvre garde ! Personne ne l’a-t-il rencontré ? On n’a pas idée aussi de confier un Diable comme moi à l’imprévoyance d’un jeune homme. Si maintenant, j’allais rencontrer mon adversaire, qu’arriverait-il ? On s’égorgerait comme des bêtes farouches… Non que je sois brutal bien que vaillant, mais enfin je ne crains pas <pb n="47" xml:id="p47"/>le combat, c’est le pain quotidien que je demande à Dieu tous les jours en me levant. Vraiment, mon ami, tu n’as pas vu passer mon garde? Ce sont les Maréchaux de France qui me l’ont envoyé pour m’empêcher de me battre en duel, le duel le plus sanglant qui ait jamais rougi l’herbe du Pré-aux-Clercs ! Ventredieu ! Que dira la noblesse quand elle saura que je n’ai pas su garder mon garde ? Toi, malheureux petit homme, va-t-en signifier à tous les Braves qu’ils aient à me laisser en paix dorénavant, car bien que je n’aie pas mon garde, je suis censé l’avoir. Je lui donnais deux pistoles par jour. Si je le retrouve, je lui en donnerai quatre, et je mettrai un cierge à St-Antoine de Padoue !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Mais au contraire, Monsieur, puisque vous voulez tuer votre ennemi, profitez de ce que votre garde vous a abandonné ! Rien ne vous empêche plus de vous battre !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Chien de myrmidon, chien de filou ! Que tu es brute en matière de démêlés ! Où serait donc la foi d’un chevalier ? Tu te figures que je suis si peu sensible à l’honneur que de me résoudre à tromper lâchement, traîtreusement la vigilance d’un honnête homme qui me gardait, et qui, à cette heure même, ne s’attend nullement à ce que je me batte ? Que le Ciel me tombe plutôt sur la tête ! Si je pensais qu’un seul homme ait pu l’imaginer, pour me venger, d’un individu sur toute l’espèce, je défendrais sur l’heure au genre <pb n="48" xml:id="p48"/>humain d’être encore vivant dans trois jours.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Ça va ! Adieu ! Adieu !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Vas-y toi-même à Dieu, poltron, et dis-lui de ma part que je vais bientôt lui envoyer tout ce qui reste encore d’hommes sur la terre !</p>
+          </sp>
+          <pb n="49" xml:id="p49"/>
+        </div2>
+      </div1>
+      <div1 type="act">
+        <head>Acte III</head>
+        <div2 type="scene">
+          <head>Scène première</head>
+          <stage>Paquier, Granger.</stage>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Oui, mon maître. Avec les feux j’ai brûlé M<hi rend="sup">lle</hi> Genevote, avec les charbons je l’ai asphyxiée, avec les traits, je l’ai transpercée…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ha ! Paquier, mon ami, aujourd’hui tu t’es surpassé. Aucune auréole n’est digne de cet exploit. Il faudrait un Empire et malheureusement la Fortune, ennemie de la Vertu, ne m’en a pas donné. Mais pour te récompenser, viens me voir entrer dans la maison de ma maîtresse, puisque tu m’as ouvert la brèche. Dans ce coffre que tu viens de tirer jusqu’ici, se trouvent les somptueux habillements dont je me veux revêtir pour faire honneur à la dame de mes pensées, et voici le miroir qui sera le conseiller de mes ajustements. Salue, Paquier, voici les sacrés haillons de mes ancêtres ; ils n’ont point vu le jour depuis celui du mariage de mon bisaïeul. Ils n’ont tache, trou, balafre ou déchirure qui ne méritent un sanglot, une larme, en hommage à leur vétusté !</p>
+            <p>Amour, flamme follette toujours au bord d’un précipice, soleil qui nous éblouit, Feu qui brûle sans consumer, Poison que l’on boit par les yeux ; Amour, petit poupard, c’est à tes côtés douillettement frétillards que je viens passer les derniers instants de cette <pb n="50" xml:id="p50"/>journée. Voyons, Paquier, tiens-moi bien hardiment ce miroir de Venise que je fasse avec un compte exact la revue des traits de mon visage. Essayons quel personnage il nous siéra mieux de représenter devant elle, du sévère Caton ou du joyeux Momus ! Rions ! Plairons ! Pleurons Rions ! Mais je ne puis faire les deux à la fois ! Ho ! Qu’est-ce là ? Attention ! Quand je ris, ma mâchoire, comme une muraille en ruine, découvre du côté droit une brèche à passer vingt hommes! Habituez-vous donc, mon visage, à ne rire qu’à gauche! Pour cela, je vais marquer, sur mes joues des petits points qu’il ne faudra point que ma bouche dépasse que je rirai ! On m’a dit que j’avais la voix un peu cassée, voyons un peu : « Je salue très humblement le bastion des grâces et la citadelle des rigueurs de Mademoiselle Genevote ! » Ai-je parlé trop haut ou trop bas? je n’ai point de diapason ! Maintenant il serait bon d’avoir des lieux communs tout prêts pour la Passion que je voudrais exprimer. Selon que je sera bien ou mal reçu, il conviendra de faire éclater le Dédain, la Colère ou l’Amour.</p>
+            <p>Voyons le dédain :</p>
+            <stage>(Il déclame.)</stage>
+            <p>« Quoi, tu pensais que tes yeux eussent frappé ma poitrine au défaut de la cuirasse ? Non, non, tes traits sont si venins qu’ils ne blessent personne ! Quoi je t’aurais aimée, chétif vaisseau de concupiscence, boite aux reliefs, vase exutoire du genre masculin. Petite gueuse, contente-toi de me regarder, admire et tais-toi ! »  Pas mal !…</p>
+            <p><hi rend="i">La colère</hi> : « Ô trois et quatre fois impitoyable <pb n="51" xml:id="p51"/>mégère ! Puisse le ciel en courroux laisser tomber sur ta tête des hallebardes au lieu de pluie. Puisses-tu boire autant d’encore que ton amour n’a fait verser de larmes ! Que les chiens lèvent sur toi la patte comme sur un mur pisseux et que le Destin te tisse des jours de crin de Chardons et d’orties »… Éloquent !</p>
+            <p>Et pour l’Amour… « Soleil, principe de ma vie, vous me donnez la mort, et déjà je ne serais plus qu’une ombre vaine et gémissante aux rives de l’Achéron, si je n’eusse redouté de faire périr en moi votre amour qui ne doit pas moins vivre que sa cause. Peut-être ô belle Tigresse, que mon chef neigeux vous fait peur ! Vous préférez les jeunes gens qui ont les yeux moins rouges et plus d’ardeur que nous… Notre bourse vous plaît davantage au singulier qu’au pluriel, et si la première nuit, « <foreign xml:lang="lat">optas ut exedat digito</foreign> »<note place="bottom">« Tu souhaites que çà dépasse le doigt</note>, par la suite « <hi rend="i">Fede longior uno</hi> »<note place="bottom">« plus long qu’un pied</note> fait bien mieux votre affaire. Mais sachez qu’un jour, les années ayant promené leur charrue à travers les roses, et les lys de votre teint, votre peau sera transformée en grimoire, et vous serez marquée par l’inéluctable épitaphe que, jour après jour, le temps grave au front de tous les humains.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 2</head>
+          <stage>Paquier, Granger, Genevote.</stage>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Mon maître voici M<hi rend="sup">lle</hi> Genevote qui s’en vient pour recevoir vos compliments…</p>
+          </sp>
+          <pb n="52" xml:id="p52"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! Mademoiselle, soyez aussi bienvenue que la grâce aux pendus quand ils sont sur l’échelle !</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Est-ce l’Amour qui vous a rendu criminel ? La faute serait trop belle pour ne pas vous la pardonner. Toute la pénitence que je vous ordonne, c’est de rire avec moi d’un Conte que l’on vient de me faire. Ce conte se pourrait appeler une histoire, car il n’est rien de plus vrai. Elle vient d’arriver il n’y a pas deux heures au plus burlesque personnage de Paris, et vous ne sauriez croire à quel point elle est plaisante. Eh bien ! vous ne riez pas ?…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mademoiselle, je veux bien croire que votre histoire est divertissante au-delà du possible, puisque vous me le dites. Mais…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Mais vous n’en riez pas…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Si ! si ! Ha, ha, a, a, a,…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Avant d’entrer en matière, il faut vous décrire l’anatomie de ce squelette d’homme et de ses vêtements telle qu’un savant n’en a fait ce matin le tableau. Voici l’heure environ que le soleil se couche, et notre héros s’en vient aux étoiles rafraîchir les lambeaux de son manteau. Ce manteau, cette cape, cette simarre, <pb n="53" xml:id="p53"/>cette robe, cette soutane, cet habit (car on est encore à deviner ce que c’est) fait bien dire aux plaisantins qu’il fait peur aux voleurs en leur montrant la corde… Certains disent avoir appris par tradition qu’il fut apporté du Caire ; on le trouve dans une vieille cave, autour de je ne sais quelle momie sous les sacrés décombres d’une pyramide éboulée. À la vérité les figures grotesques que les trous, les pièces et les taches composent bizarrement, rappellent assez bien les figures hiéroglyphiques des Égyptiens. Du manteau je passerai aux habits, et il suffira de dire que chaque pièce est un morceau d’antiquité. Venons de l’étoffe à la doublure, de la gaine à l’épée, et de la Châsse au Saint. Traçons en deux mots le dessin de notre Pédant ridicule. Figurez-vous un rejeton de ce fameux arbre « Coco » qui seul fournit au pays entier des choses nécessaires à la vie. Premièrement en ses cheveux on trouve de l’huile, de la graisse, et des cordes à violon. Sa tête peut fournir de cerne les couteliers et son front, les nécromanciens, de Grimoire à invoquer le Diable ! Ses yeux, de cire, de vernis et d’écarlate, sa gorge, de clous, de barbe ; de décrottoirs, ses doigts, de fuseaux, sa peau, de lime, son haleine, de vomitif, ses oreilles d’ailes à moulin, sa bouche de four à pain, et toute sa personne d’Âne à porter le grain à moudre. Quant à son non, il arrive partout un quart d’heure avant son maître, et dix savetiers se trouveraient à l’aise sous ses narines pour y travailler à l’abri de la pluie. Eh bien ! <pb n="54" xml:id="p54"/>Monsieur, ne voilà-t-il pas un joli Ganymède ? C’est pourtant le héros de mon histoire. Cette homme régente une classe dans l’Université, et c’est bien le plus faquin, le plus chiche, le plus ladre, le plus avare, le plus sordide… Mais riez donc !…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, se forçant.</stage></speaker>
+            <p>Ha, a, a, a, !…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote<stage>, riant.</stage></speaker>
+            <p>Ce vieux rat de collège a un fils, qui, je pense, est le receleur de toutes les perfections que la Nature a volées au Père !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! malheureux ! je suis trahi ! C’est sans doute ma propre histoire qu’elle me conte. Mademoiselle, passez ces épithètes ; il ne faut pas croire les mauvais rapports et la vieillesse doit être respectée…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Quoi ! le connaissez-vous ?…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Non ! en aucune façon…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Ce vieux bouc, pour s’affranchir d’un rival, veut envoyer son fils en je ne sais quelle ville… Et afin de venir à bout de son entreprise, il veut lui faire accroire qu’il est fou. Il le fait lier, et lui fait aussi promettre tout ce qu’il veut ! Comment, vous ne riez pas de ce vieux bossu ?</p>
+          </sp>
+          <pb n="55" xml:id="p55"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Hélas ! Hélas ! faites grâce à ce pauvre vieillard !</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Or, écoutez le plus plaisant. Ce gouteux, de loup-garou, ce moine bourru…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Passez outre, cela ne fait rien à l’histoire…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Commanda à son fils d’acheter quelque bagatelle pour faire un présent à son oncle de Venise, et son fils, un quart d’heure après, lui manda qu’il venait d’être fait prisonnier par des pirates turcs au cap de la Place Dauphine ; et, ce qui n’est pas mal plaisant, c’est que le bonhomme aussitôt envoya la rançon! Mais il n’a que faire de craindre pour son argent, celui-ci ne courra point de risques sur la mer du Levant !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, à part.</stage></speaker>
+            <p>Traître de Corbineli, tu m’as vendu ! mais je te ferai donner la question. Ma foi, Mademoiselle, vous me voyez interdit, et vous pouvez juger du trouble de mon âme par celui de mon visage. Laissons-là votre histoire et parlons de nous. L’image de votre beauté joue incessamment dans mon cœur, à remue-ménage. Et cependant, je ne veux pas tenir ma récompense du trouble d’un esprit égaré. Non, je la veux tenir de la force de ma passion que je prétends vous prouver par quatre figures de rhétorique : les antithèses, les métaphores, les comparaisons et les arguments.</p>
+          </sp>
+          <pb n="56" xml:id="p56"/>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Inutile ! je ne doute pas qu’après avoir passé seulement une nuit à vos côtés, je serai aussi savante qu’Hésiode le fut pour avoir dormi sur le Parnasse. Je ne le puis cacher, je vous rends les armes. Je suis à vous. Usez de moi aussi librement que le chat fait de la souris. Taillez, rognez, tranchez ? Faites-en comme des choux de votre jardin !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier<stage>, à part</stage><stage>.</stage></speaker>
+            <p>Il y a pourtant bien du « <foreign xml:lang="lat">distinguo</foreign> » entre les femmes et les choux. Car des choux la tête est bonne, et des femmes, c’est ce qui ne vaut rien.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Auriez-vous donc pour agréable, Mademoiselle, lorsque la Nuit aura couvert de ses voiles étoilés, la face du Zénith, que je transporte ma personne sous votre toit, pour y humer à longs traits le miel de votre éloquence et sacrifier à la déesse à qui sont soumis les Dieux, les hommes et toute la nature ?</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Oui. Venez. Mais venez avec une échelle et montez par la fenêtre, car Monsieur de la Tremblaye, mon frère, serre toutes les nuits sous son oreiller les clefs de notre maison…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Que ne suis-je à présent Jules César ou le pape Grégoire, ces fabricants de calendrier, à qui le soleil dut faire sa soumission ! Que ne suis-je Jupiter, amant d’Alemène ou Josué, général des <pb n="57" xml:id="p57"/>Hébreux, j’arrêterais le soleil et le contraindrais de marquer minuit à six heures. Je vous quitte chère belle Genevote ; je vais à la maison faire un peu de toilette et répandre sur ma personne les odorantes harmonies des parfums nuptiaux. À tout à l’heure…</p>
+            <stage>(Il sort.)</stage>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 3</head>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Il faut maintenant prévenir Charlot… Mais par bonheur le voici! Ah ! Charlot, votre père me quitte à l’instant. C’est bien le plus bouffon personnage que j’aie jamais vu. Et moi, je suis devenue facétieuse par contagion, jusqu’à lui laisser croire que je l’attendrai ce soir dans ma chambre. Il doit escalader ma fenêtre.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Retirez vous, Genevote, il faut dire adieu. Renvoyez-moi votre frère que je me consulte avec lui. Notre bonhomme va s’enferrer et, par là, servir nos desseins. Ah ! voici Monsieur de la Tremblaye.</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>De La Tremblaye</speaker>
+            <p>Ma sœur me dit que vous me voulez voir ?</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Oui. Vous êtes au courant sans doute. Il faut nous servir de cette occurrence pour épouser, vous, ma sœur, moi la vôtre. Corbineli nous aidera, le voici qui vient à notre secours.</p>
+          </sp>
+          <pb n="58" xml:id="p58"/>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>À vos ordres, mon maître…</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>De La Tremblaye</speaker>
+            <p>Pour ma part, je vais assembler quelques-uns de mes amis pour vous aider au cas où son Collège le voudrait secourir. Mais une autre idée m’embarrasse. C’est que je crains, si je n’arrive assez tôt, ce qu’il n’entre dans la chambre de ma sœur, et comme enfin elle est fille, qu’elle n’ait de la peine à se dépêtrer des poursuites de ce Docteur échauffé…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Ne vous mettez pas en peine de cela. Je saurai l’arrêter… De telle sorte qu’il ne pourra escalader la chambre, et que, pour une raison que je garde secrète, il n’osera non plus retourner chez lui !… Mais je m’en vais m’habiller pour la pièce…</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Mon cher beau-frère, je cherchais un moyen de hâter notre double mariage. Votre père lui-même nous en donne un fort bon. Par ma foi, la bête donnera dans nos panneaux, ou nous sommes de bien mauvais chasseurs.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Retirons-nous, et préparons-nous chacun à bien jouer notre rôle…</p>
+          </sp>
+          <pb n="59" xml:id="p59"/>
+        </div2>
+      </div1>
+      <div1 type="act">
+        <head>Acte IV</head>
+        <div2>
+          <head>[Scène première]</head>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <stage>(Sort de sa maison suivi par son serviteur Paquier qui porte une échelle.)</stage>
+            <p>Tout dort chez nous d’un sommeil de plomb. Tout ronfle jusqu’aux Grillons et aux crapauds. Paquier, avance ton échelle. Ah ! que c’est bien pour moi l’échelle de Jacob puisqu’elle va me conduire au paradis !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <stage>(À part : au micro.)</stage>
+            <p>Tu as compté sans ton serviteur Corbineli. Il fait noir comme dans un four. je vais me mettre au pied de la maison de Genevote. Ils prendront mon dos pour le mur et appuieront leur échelle dessus…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Je crois que voici la maison. Attendez. je pose l’échelle et je monte…</p>
+            <stage>(L’échelle tombe avec grand fracas.)</stage>
+            <p>Ah ! je suis mort !… C’est ma faute, je ne lui ai pas donné assez de pied…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Fais attention à ce que tu fais ! Là… Appuie-la encore un coup, et monte pour voir si elle est d’aplomb.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Je la tiens ferme, et loin du mur, il peut toujours monter…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>J’ai peur d’avoir donné trop de pied, cette fois. Il n’importe. Elle est solide. Un, deux, trois, quatre, cinq, six, sept, huit échelons ; me voici en haut. <pb n="60" xml:id="p60"/>Mais qu’est cela ? Je ne rencontre point de mur. Notre machine tiendrait-elle debout toute seul ? Seigneur ! plantez-vous-même votre échelle ! Moi je redescends et je n’y touche plus…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>« <foreign xml:lang="lat">Vade retro</foreign> » mauvaise bête ! Je l’appliquerai bien moi-même. Là, je pense que j’y suis, voici la porte. Je la reconnais aux clous. Monte pour voir si l’échelle est ferme.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, au micro.</stage></speaker>
+            <p>Retirons-là ; il fait si noir qu’ils ne la retrouveront plus…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Mais Monsieur, où est-elle ?… Je tâte et ne trouve rien…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Je viens de la poser devant toi.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Elle a disparu, Monsieur. Les diables l’ont enlevée.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Tais-toi Paquier. J’ai vu tout à l’heure passer je ne sais pas quoi de noir… C’est peut-être une des larves dont nous parlions tantôt, qui vient pour s’effrayer…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Monsieur, on dit que pour épouvanter le diable, il faut montrer du cœur. Toussez deux ou trois fois, vous nous rassurerez…</p>
+          </sp>
+          <pb n="61" xml:id="p61"/>
+          <sp who="granger">
+            <speaker>Granger<stage>, tousse.</stage></speaker>
+            <p>Qui es-tu ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Plus haut, Monsieur.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Qui es-tu ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Encore plus fort.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Qui es-tu donc ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Chantez un peu pour vous rassurer…</p>
+            <stage>(Granger chante.)</stage>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Bon. Plus fort. Faites croire au Spectre que vous ne le craignez point. L’apercevez-vous Monsieur.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Oui, mais il a peur lui aussi. Il ne dit mot. Paquier, ne serait-ce point mon ombre ? Elle est vêtue tout comme moi, elle fait les mêmes gestes, recule quand j’avance, avance quand je recule… Il faut que j’en aie le cœur net. Je vais lui donner un coup de poing. Ah !… Seigneur Jésus ! elle m’a rendu mon coup de poing !…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Monsieur, il se peut que les ombres de la nuit étant plus épaisses que celles du jour, soient aussi plus robustes, et qu’elles puissent frapper les gens. <pb n="62" xml:id="p62"/>Rentrons plutôt, voilà notre porte ouverte !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, au micro.</stage></speaker>
+            <p>Brûlons leur la politesse et passons le premier.</p>
+            <stage>(Il ferme la porte bruyamment.)</stage>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ma foi ! l’ombre a été plus agile que moi ! Elle est rentrée, elle !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Mais aussi, Monsieur, votre ombre est-elle folle de marcher devant vous, et d’entrer toute seule au logis ! Ho !… et si ce n’était pas votre ombre ! Si c’était votre âme… Ne vous souvient-il pas qu’hier vous la donnâtes à M<hi rend="sup">lle</hi> Genevote ?…</p>
+            <p>N’étant plus à vous, elle vous aura quitté ; cela est bien visible, puisque nous la rencontrons en chemin qui s’en va… Ha ! voyez donc là-haut à cette fenêtre !…N’est-ce point elle ?… Nous allons bien voir… Si c’est elle, peut-être qu’en la flattant un peu, elle se repentira de sa faute et vous reviendra. Hé là-haut ! Je t’adjure par le Dieu vivant, de me dire qui tu es…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Je suis le grand Diable Vauvert ! C’est moi qui fais dire la pâtenôtre du loup ; qui noue l’aiguillette aux nouveaux mariés, qui rende invisibles les frères de la Rose-Croix ; qui dicte aux Rabbins le Talmund et la Cabale. qui donne la main de gloire, le Trèfle à quatre feuilles, la Mandragore, le Gui l’An Neuf. <pb n="63" xml:id="p63"/>J’enseigne la composition des Sorts, Pactes, Grimoires, Talismans, figures constellées. Je prêtai à Socrate son démon familier, fis voir à Brutus son mauvais génie ; tentai Jésus dans le désert. J’envoie les esprits follets, les gobelins, les farfadets, les korrigans, les elfes, le moine-bourru, le Loup-Garou, les hommes noirs, les dames blanches, les Ardents, les Lémures, les ogres, les larves, les succubes, les incubes, les Fées, les ombres, les spectres, les fantômes. Enfin je suis le Grand Veneur de la Forêt de Fontainebleau.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, effrayé.</stage></speaker>
+            <p>Ah ! Paquier, qu’est ceci ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Voilà un Démon qui n’a pas la langue dans sa poche.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Qu’en dis-tu ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Que c’est un diable femelle pour avoir tant de caquet.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>En effet, je ne le crois pas méchant, et j’ai remarqué qu’il ne nous a pas dit un mot avant de s’être mis hors de notre portée.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Monsieur, ne craignez point les Diables, jusqu’à ce qu’ils vous emportent, mais voici votre échelle, la lune se lève, on y voit plus clair. Grimpez à vos amours.</p>
+          </sp>
+          <pb n="64" xml:id="p64"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ainsi fais-je.</p>
+            <stage>(Il monte à l’échelle.)</stage>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 2</head>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye<stage>, sortant de sa maison.</stage></speaker>
+            <p>Ah ! Je vous y prends ! Au voleur au voleur ! Vous serez pendus, coquins. Ce n’est pas la première fois que cela vous arrive. Nonnes gens, vous pouvez chanter le « <foreign xml:lang="lat">Salve Domine</foreign> », le patient est déjà sur l’échelle.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>En mourra-t-il Monsieur ?</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>De La Tremblaye</speaker>
+            <p>Tu peux y compter.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Seigneur, ayez donc pitié de l’âme de feu mon pauvre maître Nicolas Granger. Vous le reconnaîtrez bien : c’est un petit homme qui a un grand chapeau et un haut-de-chausse par dessus sa culotte.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, criant.</stage></speaker>
+            <p>Au secours Monsieur de Châteaufort ! C’est votre ami Granger que La Tremblaye veut égorger !</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort<stage>, ouvrant sa fenêtre.</stage></speaker>
+            <p>Qui me réveille à cette heure ? Quelles sont les Canailles qui font du bruit là-bas ? Si je descends, je lâcherai la bride aux filles de l’Achéron !</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Qu’on le descende de son échelle, et qu’on lui donne la question.</p>
+          </sp>
+          <pb n="65" xml:id="p65"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! Monsieur de Château très fort, envoyez votre foudre sur la témérité criminelle de ces chétifs myrmidons</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort<stage>, descend sur la place.</stage></speaker>
+            <p>J’arrive! Or donc, maraude, ne savez-vous pas qu’à ces heures muettes, j’ordonne à toutes choses de se taire, sauf à ma Renommée ? Oser m’arracher au sommeil ! Choisis toi-même ton supplice, et dépêche-toi de parler, car ton heure est venue.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Monsieur de Châteaufort, si vous traitez de la sorte un malheureux, que ferez-vous à votre rival ?</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Un rival ! Jupiter ne l’oserait être impunément !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Monsieur de la Tremblaye a donc plus d’audace que Jupiter.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Ce grimaud, ce fat, ce farfadet ! Je le cherchais ce tantôt, pour le faire mourir avec douceur ; mais vous avez eu tort de me le désigner, Docteur, car ma bile est tellement échauffée que je n’oserais le  punir, de crainte que le ciel ne croulât tout entier !</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Pour éviter un tel malheur, suivez-moi : oui, vous Monsieur l’archi-épouvantable, je vous fais prisonnier, à la requête de l’Univers. Mais voici Manon, la fille de Maître Oranger, que tout ce tintamarre a sans doute tirée de sa couche. Que voulez-vous, belle demoiselle ?</p>
+          </sp>
+          <pb n="66" xml:id="p66"/>
+          <sp who="manon">
+            <speaker>Manon</speaker>
+            <p>Ah ! Monsieur de La Tremblaye, donnez la vie à mon Père, et je me donne à vous. J’étais dans le collège, attendant qu’il rentrât pour fermer les portes de notre montée, lorsque j’ai entendu un grand bruit dans la rue. Un pressentiment m’a fait comprendre qu’il lui était arrivé quelque mauvaise aventure. Hélas ! mon bon ange ne m’avertit point à faux. Sans doute, Monsieur mérite-t-il la mort pour avoir été surpris, entrant dans votre maison comme un voleur, mais je sais bien aussi que les gentilshommes sont généreux, et que vous êtes gentilhomme. Vous m’avez aimée, autrefois. En devenant votre femme, ne puis-je obtenir la grâce de votre Père ? Si vous croyez que je veuille vous abuser, me voici, allons nous marier de ce pas, pourvu qu’auparavant vous me promettiez de lui donner la vie. S’il n’a point l’air d’y consentir ; il le faut excuser, Monsieur, c’est que, sur cette échelle, il a le cœur un peu haut, et qu’un homme courageux ne fléchit pas facilement. Mais pour lui sauver la vie, je ferais bien pis que de lui désobéir.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ô Dieux ! quelle fourbe ! Sans doute la Misérable est de connivence avec son traître d’amoureux ! Non, non ma fille, vous ne l’épouserez pas !</p>
+          </sp>
+          <sp who="manon">
+            <speaker>Manon</speaker>
+            <p>Ah ! Monsieur de La Tremblaye, arrêtez… Je connais à vos yeux que vous l’allez tuer !… Bon Dieu ! faut-il <pb n="67" xml:id="p67"/>voir massacrer mon père devant moi ou le voir mourir ignominieusement des mains de la justice, pour un vol dont il n’a seulement pas profité ? À l’âge où je suis faut-il que je perde mon père ? Ha ! Pour l’amour de Dieu, mon père, sauvez-vous, sauvez votre vie, et l’honneur de vos enfants! Monsieur de La Tremblaye eut un brutal qui ne nous pardonnera que si vous devenez son beau-père. Ah ! pour vous sauver, que ne ferais-je pas ! Je piétinerais honneur, pudeur, que vais-je ? À plus forte raison n’ayant qu’à devenir la femme d’un brave gentilhomme, pourquoi ne le ferais-je pas ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Où tournerai-je, mes amis, l’optique de mes espérances ? Ce ne peut être que vers vous, Monsieur de La Tremblaye ! « <foreign xml:lang="lat">Me reminisceris de licta nostra</foreign> » Oubliez notre faute, je vous en prie. J’avais un moment compté sur la protection de Châteaufort, et j’avais cru que ce Tranche Montagne…</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Que diable voulez-vous que je fasse ! Je ne puis pourtant détruire toute l’humanité pour un seul homme !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Dans la position où je suis, oserai-je, Monsieur de La Tremblaye, vous offrir  ma  fille et vous demander votre sœur ? Si vous ne détournez les yeux de mes fautes, je serai un raccourci pitoyable des misères humaines !</p>
+          </sp>
+          <pb n="68" xml:id="p68"/>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Monsieur Granger, votre désir est un ordre. J’épouserai votre fille ! Mais n’oublions pas de punir ce grotesque Rodomont de Châteaufort pour son impertinence.</p>
+            <stage>(Il le frappe d’un bâton.)</stage>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort<stage>, comptant les coups.</stage></speaker>
+            <p>Un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix, onze… Ah ! le rusé, qu’il a fait sagement. S’il eût été jusqu’à la douzaine, je l’exterminais !</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Venez à la maison signer les accordailles, messire Granger…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Entrez toujours, je vous suis. Je veux donner à mon serviteur Paquier des ordres pour que nous puissions tous nous divertir bien gaillardement…</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 4</head>
+          <stage>Granger, Paquier, Corbineli.</stage>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Paquier, va me chercher les violons… Ah ! te voilà Corbineli…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Votre serviteur, Monsieur Granger…</p>
+          </sp>
+          <pb n="69" xml:id="p69"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ouais ! Ouais ! je ne suis pas ta dupe. Ta voix ressemble fort à celle du diable Vauvert, et je suis au courant de la véracité de tes galères séquanaises mais je te pardonne ta fourbe, en faveur de ma prochaine conjonction matrimoniale.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Vous êtes trop bon.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Je te pardonne, mais à une condition. C’est que pour une fois tu m’aides du phare de ton esprit inventif. Tu vois en moi un pauvre pirate d’amour, bien en péril sur une mer orageuse et fertile en naufrages. Certaine voix secrète me menace d’un brisant, d’un banc, d’un écueil. Dis-moi, penses-tu que ma fiancée puisse revoir mon fils sans ranimer des flammes qui ne sont pas encore éteintes ! Toi seul peux démêler les sinueux détours de ce dédale ! Toi seul peut démêler les sinueux détours de ce dédale ! Toi seul peux être l’Argus qui me conservera cette Io. Ta bourse ne métamorphosera en un microcosme de richesse, et ta poche en Corne d’Abondance, si tu fais en sorte que mon fils n’ait plus de commerce avec elle. Fais, dis-je, que mon coquin de fils prenne un verre de vin au collet de si bonne sorte qu’ils en tombent tous deux sur le derrière.  Il n’y en aura jamais qu’un de cassé ! S’il assiste à mes noces, il y aura quelque catastrophe. Emmène-le donc, dans quelque cabaret où le jus des tonneaux le puisse occuper jusqu’à demain matin. Tiens ! voici de l’argent. Prends, ris, bois, mange et surtout fais le trinquer jusqu’à l’ourlet ! <pb n="70" xml:id="p70"/>Qu’il en crève ! ce ne sera que du vin de perdu !</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 5</head>
+          <stage>Granger, Corbineli, Charlot.</stage>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Tenez, le voilà votre fils, tout comme de Dieu nous le devait. Permettez que je lui parle en particulier, car votre aine ne l’apprivoiserait guère.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Fais comme tu voudras.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, à part, à Charlot.</stage></speaker>
+            <p>Je vous allais chercher. Vous ne savez pas ? On vient de condamner votre raison à mort. J’ai moi-même reçu l’ordre et le moyen…</p>
+            <stage>(Il fait sonner l’argent.)</stage>
+            <p>…de vous enivrer. Mais si vous m’en croyez, vous blesserez votre ennemi de sa propre épée. Le pauvre homme prétend faire tantôt les noces de votre sœur avec Monsieur de La Tremblaye, et le contrat des siennes avec M<hi rend="sup">lle</hi> Genevote. Craignant que votre présence n’apportât quelque obstacles, il m’a chargé de vous saouler au cabaret. C’est le bon chemin pour en venir à ce que je vous ai conseillé tantôt.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Quoi, contrefaire le mort ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Oui, je lui persuaderai que les fumées du vin vous ont porté à quelque querelle, et que… Mais vite, <pb n="71" xml:id="p71"/>allez promptement étudier votre rôle. Nous amuserons pendant ce temps, votre père, Paquier et moi, jusqu’à ce que vous veniez lui donner le spectacle de votre feinte ivrognerie. Allez vite ! Pour le reste, comptez sur moi…</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 6</head>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, haut, à Granger.</stage></speaker>
+            <p>Ma foi, Monsieur, je ne sais ce que vous avez fait au Bon Dieu, mais il vous aime bien. Votre fils sortait justement du Cabaret de la Croix Blanche avec deux ou trois de vos pensionnaires qui l’y avaient invité. Il y est retourné, et je gage qu’il n’aura pas ajouté quatre verres de vin à ceux qu’il a pris que nous lui verrons la cervelle tournée en Zodiaque.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Avouez, Monsieur, que Dieu est bon. Voilà sans doute la récompense de la messe que vous lui fîtes dire il n’y a que huit jours.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Comment ! tu es encore là, Paquier, Et mes violons ?…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Ma foi, Monsieur, c’est aujourd’hui la fête de St-Cécile, et j’ai pensé qu’il n’y en aurait pas un seul à la maison.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 7</head>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye<stage>, sortant de chez lui.</stage></speaker>
+            <p>Monsieur Granger, je venais vous chercher. On n’attend plus que vous.</p>
+          </sp>
+          <pb n="72" xml:id="p72"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>J’allais entrer au moment que vous êtes sorti. Mais ma foi, mon Gendre, si nos invités sont piqués de la tarentule et veulent se trémousser en cadence, il faudra qu’ils cherchent d’autres accompagnateurs que les sectateurs d’Amphion, qui faisait de si belle musique que les pierres venaient se placer d’elles-mêmes les unes sur les autres au son de sa lyre. Nous n’avons point de musiciens. Mais j’ai pensé à les remplacer, par un Intermède de Comédie.</p>
+          </sp>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Je vous engage à prendre là-dessus le conseil de Corbineli. Il est italien, et ceux de sa nation jouent la comédie de naissance.</p>
+            <stage>(On entend au loin chanter Charlot comme un homme ivre.)</stage>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Qu’est-cela ?… Mais c’est mon fils ! Quelle idée a-t-il de venir ici en cet état !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Ma foi, Monsieur, il a tant bu que je pense qu’il ferrait du vin rien qu’en soufflant dans un pot d’eau…</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, faisant l’homme ivre.</stage></speaker>
+            <p>L’Hôtesse, je ne vous dois rien, je vous ai tout rendu… Ha !… Copernic dit vrai. Ce n’est pas le Ciel, c’est la terre qui tourne… Corbineli, <pb n="73" xml:id="p73"/>dis-moi, suis-je bien enluminé ? Si j’étais calendrier, mon nez rouge serait la marque d’une fête carillonnée, hein ? Garçon, encore chopine. Blanc… Rouge… ? Je m’en moque, mais qu’ils demeurent en paix ; car à la première querelle… Hep… Je les mets dehors… Comme on devient riche, tout de même, à force de boire. Tout à l’heure, je n’avais qu’une maison, en voici deux maintenant… C’est pas dans un puits qu’on trouve la vérité : Non ! Non ! dans le vin. « <foreign xml:lang="lat">In vino veritam</foreign> ! » Quel malheur de n’avoir qu’une bouche ! La nature a été bien marâtre à ce sujet ! Elle nous a donné deux bras, deux pieds, deux mains, deux oreilles, deux yeux, deux naseaux, deux rognons et deux fesses, et elle ne nous a donné qu’une bouche. Je sais bien qu’elle nous sert à beaucoup de choses. Mais pour boire, hélas ! il faudrait avoir les trois gueules de Cerbère, les sept têtes de l’Hydre et les Cent bouches de la Renommée. Ah ! surtout, point d’eau, si ce n’est au moulin. Et point de cidre non plus. À bas les vendanges qu’on fait à coups de gaule. Fi de la pomme et des pommiers !</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, sentencieux.</stage></speaker>
+            <p>La pomme en effet ligue les Dieux l’un contre l’autre, elle ravit sa femme à Ménélas, et cause le péché de notre premier père Adam, qui l’a toujours dans le gosier.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Qu’est-ce que c’est que ce Neptune avec son trident ?… Arrière ! Contente-toi d’avoir attrapé le <pb n="74" xml:id="p74"/>Pharaon avec la Mer Rouge ! Le pauvre homme, trompé par sa couleur, la but comme du vin et se noya. Mais moi, tu ne m’auras pas, je te jetterais plutôt à la Seine, comme ton Triton que voilà !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Je ne suis pas Triton, je suis Paquier, pour vous servir, Monsieur l’Ivrogne !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Tu me répliques, crapaud de mer, tiens, attrape çà !</p>
+            <stage>(Il le frappe.)</stage>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Aïe ! On ma foi ; ce n’est pas de jeu, çà, je vais vendre la mèche.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Rentrons à la maison de La Tremblaye et laissons là ce malheureux qui me déshonore. Viens, Paquier.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Bien volontiers.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 9</head>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Le voilà chez moi. Mais expliquez-moi le but de cette mascarade !</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Vous le saurez. Entrons chez vous, et je vous y apprendrai aussi le but et le sujet de la comédie de Corbineli.</p>
+          </sp>
+          <pb n="75" xml:id="p75"/>
+        </div2>
+      </div1>
+      <div1>
+        <head>Acte V</head>
+        <div2>
+          <head>[Scène première]</head>
+          <stage>Granger, Paquier.</stage>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Quoi ! tout ce que j’ai vu…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>N’était que feinte…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Quoi ! mes yeux, mes oreilles…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Vous ont trompé…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mais à quel sujet, dans quel but ?</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Que vous avez la tête dure ! Je vous ai dit que votre fille a contrefait l’ivrogne pour que Corbineli vous persuade plus facilement que ayant pris querelle dans les fumées du vin, il se sera battu et aura été tué sur place.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mais à quoi bon toute cette machination !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>À quoi bon ! je vais vous le dire. Étant ainsi trépassé, Mademoiselle Genevote, d’accord avec eux, devait faire semblant d’avoir promis au défunt de l’épouser mort ou vif. Et elle n’aurait pu vous donner sa main qu’après avoir rempli sa promesse. Corbineli vous aurait conseillé de faire le nécessaire. Elle aurait épousé le mort avec votre consentement, et <pb n="76" xml:id="p76"/>celui-ci n’aurait pas attendu le troisième jour pour ressusciter et vous remercier du présent que vous lui auriez fait.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ainsi la mèche est éventée, grâce à toi, mon fidèle Paquier.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier<stage>, au micro.</stage></speaker>
+            <p>Cela lui apprendra à me traiter de Triton.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Mon ami, je ne te donnerai pas une couronne civique à la façon des Romains bien que tu aies sauvé la vie à un honorable bourgeois, ayant pignon sur rue. Je ferai mieux. Tu pourras lever une taxe sur la pitance de mes pensionnaires. Mais voici le moment où mes pêcheurs vont s’empêtrer dans leurs propres filets. Ouvrons l’œil. J’aperçois mon fourbe de Corbineli. Toi, Paquier considère à ton aise la tempête du port.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 2</head>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Hélas ! Monsieur, sera-je toujours ambassadeur de mauvaises nouvelles ? Votre fils est mort. Au sortir d’ici, étant, comme vous savez, un peu plus gai que de raison, il a heurté un cavalier qui passait. L’autre s’est offensé. Ils ont dégainé et presque en même temps votre fils est tombé mort, traversé de deux grands coups d’épée. J’ai fait porter son corps…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, </stage><stage>feignant la douleur.</stage></speaker>
+            <p>Hélas ! la fortune réservait-elle à mes cheveux blancs l’accointance d’un si lugubre accident? Malheureux fils, je ne te plains pas de t’être acquitté si <pb n="77" xml:id="p77"/>prématurément de la dette où nous nous engageons tous en naissant. Je te plains d’être mort d’une façon si banale qu’on n’en puisse rien dire qui n’ait déjà été dit. J’aurais payé cher pour que tu aies, aux vendanges dernières, par exemple, été dévoré par les mouches d’été ; Quelle épitaphe j’aurais pu composer là-dessus !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>A-t-il eu le temps de se reconnaître ? Est-il bien mort, Corbineli ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Si bien mort, Paquier, qu’il n’en reviendra point.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Corbineli, appelle M<hi rend="sup">lle</hi> Genevote, qui les partageant, atténuera mes douleurs.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 3</head>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>La voici, Monsieur, qui vient d’elle-même.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! Mademoiselle ! mon fils a vécu ! Je dirais même qu’il vit encore si j’avais achevé un poème que je modèle sur la façon dont il est mort. Mais ne pleures pas, car, pour une vie mesquine et périssable qu’il vient de quitter, mon œuvre lui en donnera une autre éternelle et glorieuse.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Quoi ! Monsieur Charlot n’est plus ! Ah ! je veux comme lui sortir de la vie, mais puisque la Nature ne nous permet pas d’en sortir sans son consentement, je sortirai <pb n="78" xml:id="p78"/>de la vie tout en restant parmi les vivants. Oui ! je vais me retirer aujourd’hui même dans un cloître. Je n’ignore point ce que je dois à votre affection ; mais je sais aussi ce que je dois à la foi jurée, et puisque je ne puis concilier les deux, je renonce à vous épouser.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ne faites pas cela, Mademoiselle, car vous pouvez m’épouser et garder votre parole. Vous aviez promis à mon fils qu’il serait votre époux mort ou vif ? Eh bien ! libérez-vous de votre promesse en l’épousant mort. Nous ferons le contrat et procéderons à la cérémonie, et une fois quitte de votre serment, vous serez libre de vous marier avec moi.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je ferai ce que vous voulez.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Ma foi, Monsieur, Dieu vous inspire tant vous parlez sagement.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Une seule chose m’arrête. Si, miracle de beauté, vous alliez vous-même faire un miracle ! Si vous alliez rendre la vie à ceux qui ne sont pas morts et faire arriver céans la résurrection avant Pâques.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, à part.</stage></speaker>
+            <p>Aïe ! Pauvre Corbineli ! Je crois qu’une corde vient de casser à mon violon de fourberie ! Puissé-je en trouver une qui vaille mieux que celle-là !</p>
+          </sp>
+          <pb n="79" xml:id="p79"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Te voilà tout déconfit, traître, toi que j’avais élu comme étant le coffre, la boite et l’étui de toutes mes pensées.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Choisis ce que tu aimes le mieux, Corbineli : assommé ou pendu ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>J’aime mieux boire.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ce n’était point assez de m’avoir volé au nom des Turcs ! Il fallait ajouter à cela une nouvelle trahison. Mon fils est mort, dis-tu ? et du corps, fieffé menteur, qu’en as-tu fait ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Ma foi, là-dessus… Je m’éveillai…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Tu t’éveillas ! que veux-tu dire ?…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Vraiment oui ! je ne pus dormir davantage, car votre fils faisait un tonnerre de Dieu avec une assiette dont il tambourinait sur la table…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Autrement dit, tu as rêvé tout cela ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Dame oui ! Qu’aviez-vous donc compris ?</p>
+          </sp>
+          <pb n="80" xml:id="p80"/>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Coquin ! Mais vous, Mademoiselle, vous aurez de la peine à vous tirer de là !</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>En aucune façon, car si je feignis de croire que votre fils était mort, c’était pour vous ménager la joie sans égale de le retrouver vivant…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Un si friand discours adoucit par son miel la fielleuse âcreté de mes angoisses ; mais pour ce fourbe de Corbineli, il faut avouer que c’est un grand menteur.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Je me trouve flatté de ce titre de grand. Il me soucie peu que ce soit celui de Grand Menteur, Grand Ivrogne, Grand Politique, Grand Turc, Grand Muphti, Grand Vizir, Alexandre le Grand ou le Grand Pompée, pourvu que cette épithète remarquable n’empêche de passer pour médiocre.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Tu t’excuses de si bonne grâce que je serais presque déçu que tu ne m’eusses point fâché. Pour ta punition, voici ce que je t’ordonne. Nous avons besoin, pour régaler nos invités, d’un spectacle, d’un intermède de comédie. Monsieur de La Tremblaye dit que tu t’y connais en cette matière.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>En effet. J’en sais une Italienne dont l’intrigue est fort agréable. Amenez seulement ici Monsieur de la Tremblaye <pb n="81" xml:id="p81"/>votre fils et les autres, afin que je distribue les rôles.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Je vais les chercher. Viens m’aider. Paquier. À tout à l’heure.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 4</head>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Les voilà partis. Eh bien, Corbineli, la corde a cassé !</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Oui da ! Mademoiselle Genevote. J’en ai plus d’une. Et je vais engager notre bon maître dans un labyrinthe où de plus grands Docteurs que lui ne se retrouveraient pas leur chemin. Le voici qui revient.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 5</head>
+          <sp who="granger">
+            <speaker>Granger<stage>, revenant avec Pa</stage><stage>quier.</stage></speaker>
+            <p>Ils seront là tout à l’heure. Mais ne puis-je connaître le scénario de ta comédie, Corbineli ?</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Permettez-moi, Monsieur, d’indiquer d’abord son rôle à votre serviteur Paquier. Je ne peux te l’expliquer en détail, Paquier, tu n’aurais pas le temps d’apprendre tout par cœur. Je prendrai soin de me tenir derrière toi et de te souffler tes répliques. Vous, Monsieur Granger, vous êtes de toute la pièce ; et quoique au premier abord, votre personnage semble sérieux, je n’en connais pas de si bouffon.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Vous me faites jouer un rôle dans votre pièce, et vous ne m’en dites pas seulement le sujet !</p>
+          </sp>
+          <pb n="82" xml:id="p82"/>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Le voici en deux mots : Vous y verrez un homme du Tiers-État, riche de deux enfants et de force écus. La fille mariée, le fils reste à pourvoir, et à s’amourache d’une demoiselle de qualité, proche parente de son beau-frère. Il l’aime, il est aimé, mais son père s’oppose au couronnement de leurs désirs mutuels. Il tombe dans le désespoir, ainsi que sa maîtresse, et tous deux, en se tuant, changeraient cette comédie en drame, si le Père, qui est d’un bon naturel, ne finissait par donner son consentement.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Bien ! Bien ! Va maintenant conférer avec tes acteurs.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>J’y vais.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Toi, Paquier, en attendant, sois le digne portier de ma maison, en ne laisse entrer personne. Je m’en vais faire un peu toilette.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 6</head>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Il me laisse seul, pour me défendre contre l’envahissement de la foule. Oh ! quel métier que celui de portier ! Il lui faut autant de têtes qu’à Cerbère, portier des Enfers, autant d’yeux qu’à Argus, autant de bouches qu’à la Renommée, autant de mains qu’à Briarée, pour bien veiller, parler à tout le monde, se défendre de tant de gens, et s’il ne peut résister à l’assaut des solliciteurs, autant de pieds qu’à <pb n="83" xml:id="p83"/>un cloporte pour mieux prendre la fuite ! Mais voici déjà un solliciteur qui s’approche.</p>
+          </sp>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 7</head>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Bourgeois ! Eh ! Hola ! Bourgeois ! Ne représentez-vous pas aujourd’hui quelque petite joyeuseté, quelque momerie, quelque fadaise. Allons, ouvre-moi la porte.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Non, non, je n’ouvre point.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>De grâce, pauvre homme ! entr’ouvre la porte que j’aille dire à ton maître que je suis là !</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Nenni ! Nenni ! On m’a dit de ne laisser entrer personne !</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau<stage>, arrivant.</stage></speaker>
+            <p>Ma fi ! T’as ben raison de ne point le laisser entrer. Ce Monsieur de Châteaufort est un homme qui sait peu et prou. Il parle d’or et n’a point le bec jaune.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Paysan ! homme des bois ! J’aurai déjà fait un crible de ton ventre si je ne craignais de faillir à toutes les règles de la comédie qui défendent d’ensanglanter la scène…</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>Vertigué ! Je vois que vous vous êtes levé de bonne heure. Vous savez vous donner de bonnes raisons. Mais voici Monsieur Granger.</p>
+          </sp>
+          <pb n="84" xml:id="p84"/>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 9</head>
+          <stage>Gareau, Granger, Châteaufort, Paquier.</stage>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah ! je vous décoche le bonjour, Monsieur le Chevalier de Grand Revers, et à vous aussi l’homme à l’héritage.</p>
+          </sp>
+          <sp who="gareau">
+            <speaker>Gareau</speaker>
+            <p>J’étais justement venu pour vous expliquer…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Oh ! mon cher ami, par Apollon qui communique sa lumière aux choses les plus obscures, ne me ramenez point, s’il vous plaît, dans le labyrinthe de cette généalogie testamentaire. Je vous invite plutôt à assister ici à une invention théâtrale la plus hilarieuse du monde.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>N’en serai-je pas également, mon voisin ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Je vous en prie, Châteaufort.</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Monsieur, puisque mon maître vous a invité, vous pouvez passer, mais dites-moi qui vous êtes, pour une autre fois.</p>
+          </sp>
+          <sp who="chateaufort">
+            <speaker>Châteaufort</speaker>
+            <p>Je suis le fils du Tonnerre, et le frère aîné de la Foudre…</p>
+          </sp>
+          <sp who="paquier">
+            <speaker>Paquier</speaker>
+            <p>Bon !… Bon !… Eh bien ! asseyez-vous là et ne faites pas de bruit. Voici l’auteur, Monsieur Corbineli, qui s’avance, suivi de ses interprètes.</p>
+          </sp>
+          <pb n="85" xml:id="p85"/>
+        </div2>
+        <div2 type="scene">
+          <head>Scène 10</head>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Tout est prêt. Prenez un siège. Monsieur Granger, car vous avez à paraître pendant toute la pièce. Souvenez vous de parler quand je vous le dirai ! La ! Attention ! Tout le monde est prêt ?… Asseyez-vous, Monsieur de la Tremblaye. Paquier, tu es en scène auprès de Charlot. La ! le jeu commence.</p>
+            <stage>(Il frappe les trois coups.)</stage>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote<stage>, jouant et récitant.</stage></speaker>
+            <p>Enfin, qu’est devenu mon valet ?</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Il est si bien perdu qu’il ne souhaite pas se retrouver.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je n’ai point encore su le lieu ni le temps où commence votre passion.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Hélas ! ce fut aux Carmes, un jour que vous étiez au sermon.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, interrompant.</stage></speaker>
+            <p>Eh mais, ma toute belle, soleil de mon âme, ce fut bien en ce lieu que vous donnâtes échec et mat à ma pauvre liberté. Vos yeux…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, bas.</stage></speaker>
+            <p>Je pense, ma foi, que vous êtes fou de l’interrompre. Ne voyez-vous point que tout cela est dans leur rôle.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, reprenant.</stage></speaker>
+            <p>Ce fut aux Carmes un jour que vous étiez au sermon. <pb n="86" xml:id="p86"/>Tous les aspects de votre beauté vinrent assiéger ma raison. Et après que je les eux considérés, il ne me fut plus possible de haïr mes ennemis.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, interrompant.</stage></speaker>
+            <p>Ma petite Nymphe, il n’est pas convenable de converser si longtemps et seule à seul avec un jeune homme. Encore si c’était avec moi, ma barbe grise est garante de ma sagesse.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, bas.</stage></speaker>
+            <p>Que diable ! laissez-les parler ou nous donnerons votre rôle à un autre.</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote<stage>, jouant la comédie.</stage></speaker>
+            <p>Si vous m’aimez, je m’étonne que vous ne travailliez pas plus courageusement au moyen de posséder un objet pour lequel vous avez tant de passion. <pb n="88" xml:id="p88"/>À quoi bon tant de protestations d’amitié ! Soyez plutôt pendu au cou de votre père, et à force de larmes et de prières, arrachez-lui son consentement à notre mariage.</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot</speaker>
+            <p>Ainsi fais-je. Ah ! mon père, je viens vous conjurer d’avoir pitié de moi et…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Et moi, vous témoigner l’envie que j’ai de vous faire bientôt grand-père…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Comment Grand-Père ? Je veux bien tirer de vous une propagation de petits individus. Mais j’en veux être la cause directe et non pas la cause éloignée.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Mais taisez-vous donc! Ne voyez-vous pas que l’ordre de la pièce demande qu’ils disent tout cela.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ils n’ont pas assez de bien l’autre, et je ne souffrirai jamais…</p>
+          </sp>
+          <sp who="charlot">
+            <speaker>Charlot<stage>, jouant.</stage></speaker>
+            <p>Eh bien ! Prenez ce poignard, père dénaturé, faites deux homicides, par un meurtre. Écrivez le destin de ma maîtresse avec mon sang. Allons frappez ! Qu’attendez-vous ?</p>
+          </sp>
+          <pb n="89" xml:id="p89"/>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, à Granger.</stage></speaker>
+            <p>Eh bien ! voilà le moment de répondre. Quoi ! Êtes-vous mort ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Que faut-il que je dise ? je ne suis point d’avis de ce mariage, moi.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Mais l’ordre de la pièce veut que vous donniez votre consentement, voyons, accordez votre fils à Mademoiselle ; mariez-les…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Les marier ?… Mais c’est une comédie…</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Justement. Toute comédie ne se termine-t-elle pas par un mariage ?</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Comment ? Est-ce déjà la fin ? On en a joué à peine un acte.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Nous avons uni les cinq actes en un de peur de confusion.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Ah bon ! « Alors, comme cela, je te permets de prendre Mademoiselle comme légitime épouse. »</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Vous plaît-il signer ces articles… Voilà le notaire tout prêt.</p>
+          </sp>
+          <pb n="90" xml:id="p90"/>
+          <sp who="granger">
+            <speaker>Granger<stage>, riant.</stage></speaker>
+            <p>Où diable avez-vous été chercher cet acteur-là ? Aux cuisines ? Il ressemble à un notaire comme un merle à une chèvre. ma foi, signons ces fariboles.</p>
+            <stage>(Il signe.)</stage>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli<stage>, d’un ton triomphant.</stage></speaker>
+            <p><foreign xml:lang="ita">E finita la Comedia</foreign> ! La comédie est finie…</p>
+            <stage>(Brouhaha, bruit de sièges, compliments, puis...)</stage>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger</speaker>
+            <p>Eh bien, Mademoiselle Genevote, que dites-vous de notre intermède ?</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>Je le trouve d’autant plus beau que vous savez qu’il est de ceux qui durent toute la vie. Nous vous en avons fait le récit comme d’une chose qui devait arriver, et… Elle est arrivée… Et vous n’avez pas sujet de vous plaindre, car vous nous avez mariés vous-même et vous-même avez signé les articles du contrat.</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, furieux.</stage></speaker>
+            <p>C’est une Fourberie…</p>
+          </sp>
+          <sp who="genevote">
+            <speaker>Genevote</speaker>
+            <p>N’en avez-vous pas donné l’exemple tout le premier en faisant accroire à vos parents que votre fils était fou, alors qu’il ne voulait pas se laisser envoyer à Venise ? Cette fourbe lui montra le chemin de celle-ci. Il crut ne point fauter en imitant un si bon père.</p>
+          </sp>
+          <sp who="corbineli">
+            <speaker>Corbineli</speaker>
+            <p>Je crois, Monsieur, que c’est une pilule qu’il vous faut avaler.</p>
+          </sp>
+          <pb n="91" xml:id="p91"/>
+          <sp who="tremblaye">
+            <speaker>La Tremblaye</speaker>
+            <p>Mon cher beau-père, je n’ose quasi prendre la hardiesse de vous consoler…</p>
+          </sp>
+          <sp who="granger">
+            <speaker>Granger<stage>, grognant.</stage></speaker>
+            <p>N’en prenez pas la peine, je me consolerai bien tout seul… « <foreign xml:lang="lat">O tempora ! O Mores…</foreign> »</p>
+          </sp>
+        </div2>
+      </div1>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,180 @@
+:root {
+	--header-bg: #152e4d;
+	--main-color: #a5adc6;/*Avant : #c1cbe6    Après:  #a5adc6*/
+	--main-bg: #12263f;
+	--hr-bg: #6d7d90;
+}
+
+/***************/
+/*** HEADER ***/
+/***************/
+
+#header, #header * {
+	background-color: var(--header-bg);
+	color: white;
+}
+
+/************/
+/*** MAIN ***/
+/************/
+
+html, body {
+	height: 100%;
+}
+
+* {
+	color: var(--main-color);
+	background-color: var(--main-bg);
+}
+
+#container {
+	background-color: var(--header-bg);
+}
+
+div {
+	text-align: justify;
+}
+
+.col-5, .col-2 {
+	overflow-y: auto;
+}
+
+#information {
+	background-color: var(--header-bg);
+	border-top: 1px solid var(--main-bg); 
+}
+
+#information * {
+	background-color: var(--header-bg);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+h1 {
+	font-weight: bold !important;
+}
+
+#version1, #version2 {
+	border-right: 40px solid var(--header-bg);
+}
+
+pre {
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+/*******************/
+/*** INFORMATION ***/
+/*******************/
+
+#information h5 {
+	margin-bottom: 20px;
+}
+
+#information i {
+	font-size: 14pt;
+	color: white;
+}
+
+hr {
+	border-top: 1px solid var(--hr-bg) !important;
+}
+
+		/***************/
+		/*** LEGENDE ***/
+		/***************/
+
+.circle {
+	width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+#circle-insertion {
+  background: rgba(0, 180, 120, 0.5);
+}
+
+#circle-suppression {
+  background: rgba(255, 99, 132, 0.5);
+}
+
+#circle-remplacement {
+  background: rgba(54, 162, 235, 0.5);
+}
+
+#circle-deplacement {
+  background: rgba(255, 159, 64, 0.5);
+}
+
+		/****************/
+		/*** DOWNLOAD ***/
+		/****************/
+
+#download .row:not(:first-child) i:hover {
+	cursor: pointer;
+}
+
+/***********************/
+/*** MODAL STATISTIC ***/
+/***********************/
+
+#statisticModal a:hover {
+	color: transparent;
+}
+
+#statisticModal i {
+	font-size: 14pt;
+}
+
+/************/
+/*** SPAN ***/
+/************/
+
+br {
+  content: "";
+  margin: 2em;
+  display: block;
+  font-size: 24%;
+}
+
+.commun:hover, .insertion:hover, .suppression:hover, .remplacement:hover, .deplacement:hover {
+	border-bottom: 1px dotted #c1cbe6;
+	cursor:pointer;
+}
+
+/*Insertion*/
+.insertion {
+	background-color: rgba(0, 180, 120, 0.5);
+}
+
+/*Suppresion*/
+.suppression {
+	background-color: rgba(255, 99, 132, 0.5);
+}
+
+/*Remplacement*/
+.remplacement {
+	background-color: rgba(54, 162, 235, 0.5);
+}
+
+/*Déplacement*/
+.deplacement {
+	background-color: rgba(255, 159, 64, 0.5);
+}
+
+/*************/
+/*** MODAL ***/
+/*************/
+
+.modal-header {
+	border-bottom: 1px solid var(--hr-bg);
+}
+
+.modal-footer {
+	border-top: 1px solid var(--hr-bg);
+}
