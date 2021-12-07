@@ -226,3 +226,25 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1638780363876	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1638780392277	Marionette	INFO	Stopped listening on port 62845
 [Parent 10932, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1638889526082	geckodriver	INFO	Listening on 127.0.0.1:51673
+1638889529110	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Saignol\\AppData\\Local\\Temp\\rust_mozprofile4wxK2m"
+1638889529530	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saignol\\AppData\\Local\\Temp\\rust_mozprofile4wxK2m\\search.json.mozlz4", (void 0)))
+1638889531948	Marionette	INFO	Listening on port 51682
+1638889532273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638889540472	Marionette	INFO	Stopped listening on port 51682
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638889548716	geckodriver	INFO	Listening on 127.0.0.1:51725
+1638889551734	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Saignol\\AppData\\Local\\Temp\\rust_mozprofileBavtnX"
+1638889552105	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Saignol\\AppData\\Local\\Temp\\rust_mozprofileBavtnX\\search.json.mozlz4", (void 0)))
+1638889554541	Marionette	INFO	Listening on port 51733
+1638889554903	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1638889587472	Marionette	INFO	Stopped listening on port 51733
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

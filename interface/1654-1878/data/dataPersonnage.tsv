@@ -1,5 +1,5 @@
-	fleury	tremblaye	corbineli	gareau	chateaufort	paquier	cuistre	charlot	genevote	manon	granger
-insertion	0.0	30.0	76.0	93.0	149.0	65.0	0.0	51.0	25.0	4.0	215.0
-suppression	87.0	364.0	1021.0	2439.0	3125.0	2641.0	0.0	1097.0	685.0	107.0	6686.0
-remplacement	0.0	14.0	38.5	440.0	41.0	19.0	0.0	21.5	26.5	23.0	107.0
-deplacement	0.0	11.5	7.0	18.0	30.0	25.5	0.0	1.0	1.0	5.0	9.5
+	corbineli	gareau	charlot	manon	fleury	tremblaye	granger	paquier	cuistre	chateaufort	genevote
+insertion	76.0	93.0	51.0	4.0	0.0	30.0	215.0	65.0	0.0	149.0	25.0
+suppression	1021.0	2439.0	1097.0	107.0	87.0	364.0	6686.0	2641.0	0.0	3125.0	685.0
+remplacement	38.5	440.0	21.5	23.0	0.0	14.0	107.0	19.0	0.0	41.0	26.5
+deplacement	7.0	18.0	1.0	5.0	0.0	11.5	9.5	25.5	0.0	30.0	1.0
