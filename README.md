@@ -2,11 +2,11 @@
 
 AutoMEDITE est un utilitaire développé en Python 3 approfondissant les résultats obtenus par MEDITE, un logiciel d’alignement textuel comparant automatiquement deux versions d’une même œuvre. Utilisable librement à l'adresse suivante : http://obvil.lip6.fr/medite/,  MEDITE met en évidence les suppressions, insertions, remplacements et les déplacements dans une interface bipartite commode.
 
-Malgré ces qualités incontestables, MEDITE comporte trois limites :
+Malgré ces qualités incontestables, MEDITE comporte trois limites pour une utilisation scientifique :
 
-1. Les résultats ne sont pas interopérables en ce qu'ils ne considèrent pas un standard de l'édition électronique en entrée et en sortie.
-2. Les statistiques ne sont pas pondérées par leurs tailles : la suppression d'un paragraphe entier ou d'un unique mot est par exemple comptabilisé de la même manière.
-3. Dans certains cas ponctuels, MEDITE ajoute des blocs de texte absents des textes sources dans le résultat du texte aligné.
+1.  L'outil ne supporte pas nativement les standards en édition électronique que ce soit en entrée ou en sortie. Pour les Lettres, on aurait attendu le traitement du XML-TEI et, en ce sens, les résultats ne sont pas interopérables.
+2.  Les statistiques ne sont pas pondérées par leurs tailles. La suppression d'un paragraphe entier ou d'un unique mot est par exemple comptabilisé de la même manière dans l'analyse.
+3.  Dans certains cas ponctuels, il ajoute des blocs de texte absents des textes sources dans le résultat du texte aligné. Ceci entraîne des difficultés importantes pour les traitements ultérieurs.
 
 AutoMEDITE se propose de répondre à ces limites en ajoutant une interface locale d’édition et de recherche utile pour les chercheurs. En ce sens, AutoMEDITE est une surcouche applicative au logiciel MEDITE. Le tableau suivant compare leurs fonctionnalités  :
 
@@ -183,6 +183,9 @@ Fonctionnalités à venir :
 * Création d'un module dédié à la création / gestion des statistiques.
 * Ajout d'une nouvelle statistique pour calculer le volume de réécriture par personnage, pondéré par leur poids de parole.
 * Ajout d'une option pour passer d'un mode de lecture jour / nuit.
+* Lister les noms des personnages par ordre alphabétique.
+* Harmoniser les scripts Python en appliquant des classes et en supprimant la redondance de portion de codes.
+* Correction d'un bug de design sur les couleurs remplacement / déplacement dans les statistiques.
 
 # FAQ
 
@@ -217,6 +220,13 @@ GeckoDriver est un utilitaire permettant de faire fonctionner à distance le nav
 3. Tapez « Système » dans votre barre de recherche et sélectionner « Système (Panneau de configuration) ». Cliquez ensuite sur le lien « Paramètres avancés du système ».
 4. Dans la fenêtre qui s’ouvre, cliquez sur « Variables d'environnement ». Dans la section « Variables système », recherchez la variable d'environnement « PATH » et sélectionnez-la. Cliquez sur « Modifier ». Si la variable d'environnement PATH n'existe pas, cliquez sur « Nouvelle ».
 5. Dans la fenêtre « Modifier la variable système » (ou « Nouvelle variable système »), indiquez la valeur de la variable d’environnement PATH en collant le chemin absolu de GeckoDriver. Cliquez sur « OK ». Fermez toutes les fenêtres restantes en cliquant sur « OK ».
+
+## Je suis sous MAC, comment modifier PATH ?
+
+Vous trouverez ci-dessous deux tutoriels pour apprendre à modifier PATH :
+
+* https://quick-tutoriel.com/ajouter-rapidement-un-nouveau-repertoire-au-path-de-mac-osx/
+* https://www.skymac.org/Univers-Apple/article-4eb0d478-Modifier-le-path-de-votre-terminal-sur-macOS.htm
 
 ## Comment installer un serveur web local ?
 
